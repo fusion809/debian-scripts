@@ -18,6 +18,13 @@ alias SSH=gitsw
 alias gitssh=gitsw
 alias gits=gitsw
 
+function gitc {
+  git clone git@github.com:fusion809/$1.git
+  pushd $1
+    git remote add upstream git@github.com:$2/$1.git
+  popd
+}
+
 # Push changes
 function push {
   git add --all && git commit -m "$1" && git push origin master
@@ -42,18 +49,25 @@ function gitsh {
   git gc --prune=now --aggressive
 }
 
+# Shrink and estimate size
+function gitssi {
+  gitsh && gitsize
+}
+
 function pushss {
   push "$1" && gitsh && gitsize
 }
 
-# centos-scripts
-  ## Update local centos-scripts repo
+# debian-scripts
+  ## Update local debian-scripts repo
   function cps {
-    cp -a ~/Shell/* ~/GitHub/centos-scripts/Shell
-    cp -a ~/.bashrc ~/GitHub/centos-scripts/
+    cp -a ~/Shell/* ~/debian-scripts/Shell
+    cp -a ~/.bashrc ~/debian-scripts/
+    sudo cp -a /root/.bashrc /home/fusion809/debian-scripts/root/
+    sudo cp -a /root/Shell/* /home/fusion809/debian-scripts/root/Shell
   }
 
-  ## Update centos-scripts GitHub repo
+  ## Update debian-scripts GitHub repo
   function shup {
     cps && cdss && push "$1"
   }
@@ -64,7 +78,13 @@ function pushss {
 #############################################################
 # Sign in with SSH at startup
 # Makes contributing to GitHub projects a lot simpler.
-SSH_ENV=$HOME/.ssh/environment
+if [ -a $HOME/.ssh/environment ]
+then
+  SSH_ENV=$HOME/.ssh/environment
+elif [ $USER == fusion809 ]
+then
+  ssh-keygen -t rsa -b 4096 -C "brentonhorne77@gmail.com"
+fi
 
 # start the ssh-agent
 # Remember, for this to work you need your SSH keys setup
