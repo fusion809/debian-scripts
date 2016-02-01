@@ -171,7 +171,7 @@ function cdg {
 	}
 
 	function cdss {
-		cd ~/GitHub/centos-scripts
+		cd ~/GitHub/debian-scripts
 	}
 
 	function cdgs {

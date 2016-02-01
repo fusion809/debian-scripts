@@ -64,7 +64,7 @@ function pushss {
     cp -a ~/Shell/* ~/GitHub/debian-scripts/Shell
     cp -a ~/.bashrc ~/GitHub/debian-scripts/
     sudo cp -a /root/.bashrc /home/fusion809/GitHub/debian-scripts/root/
-    sudo cp -a /root/Shell/* /home/fusion809/GitHub/debian-scripts/root/Shell
+    sudo cp -a /root/Shell /home/fusion809/GitHub/debian-scripts/root/Shell
   }
 
   ## Update GitHub/debian-scripts GitHub repo
