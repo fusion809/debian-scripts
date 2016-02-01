@@ -7,6 +7,10 @@ function cdman {
 }
 alias cdmn=cdman
 
+function cdd {
+	cd ~/GitHub/debian-scripts
+}
+
 # MediaWiki
 function cdmw {
 	cd $MW

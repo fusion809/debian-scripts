@@ -58,16 +58,16 @@ function pushss {
   push "$1" && gitsh && gitsize
 }
 
-# debian-scripts
-  ## Update local debian-scripts repo
+# GitHub/debian-scripts
+  ## Update local GitHub/debian-scripts repo
   function cps {
-    cp -a ~/Shell/* ~/debian-scripts/Shell
-    cp -a ~/.bashrc ~/debian-scripts/
-    sudo cp -a /root/.bashrc /home/fusion809/debian-scripts/root/
-    sudo cp -a /root/Shell/* /home/fusion809/debian-scripts/root/Shell
+    cp -a ~/Shell/* ~/GitHub/debian-scripts/Shell
+    cp -a ~/.bashrc ~/GitHub/debian-scripts/
+    sudo cp -a /root/.bashrc /home/fusion809/GitHub/debian-scripts/root/
+    sudo cp -a /root/Shell/* /home/fusion809/GitHub/debian-scripts/root/Shell
   }
 
-  ## Update debian-scripts GitHub repo
+  ## Update GitHub/debian-scripts GitHub repo
   function shup {
     cps && cdss && push "$1"
   }
