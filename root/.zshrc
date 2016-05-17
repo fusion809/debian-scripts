@@ -50,6 +50,25 @@ ZSH_THEME="hcompact"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting)
+autoload -U compinit && compinit
+source $ZSH/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# bind UP and DOWN arrow keys
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+#
+# # bind UP and DOWN arrow keys (compatibility fallback
+# # for Ubuntu 12.04, Fedora 21, and MacOSX 10.9 users)
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+#
+# # bind P and N for EMACS mode
+# bindkey -M emacs '^P' history-substring-search-up
+# bindkey -M emacs '^N' history-substring-search-down
+#
+# # bind k and j for VI mode
+# bindkey -M vicmd 'k' history-substring-search-up
+# bindkey -M vicmd 'j' history-substring-search-down
 
 # User configuration
 
@@ -82,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-for i in ~/Shell/*.sh
+for i in $HOME/Shell/*.sh
 do
 	. "$i"
 done
