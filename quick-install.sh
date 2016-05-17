@@ -1,6 +1,6 @@
 # Create GitHub directory
 if ! [[ -d $HOME/GitHub ]]; then
-  mkdir ~/GitHub
+  mkdir $HOME/GitHub
 fi
 
 # Get openssh, if not pre-installed and Zsh

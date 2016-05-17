@@ -53,7 +53,7 @@ ZSH_THEME="hcompact"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting safe-paste zsh-completions)
 autoload -U compinit && compinit
-source ~/.oh-my-zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $ZSH/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
@@ -102,9 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-. $HOME/Shell/01-variable.sh
 
-for i in $HOME/Shell/{02,03,04,05,06,07,08,09,10}*.sh
+for i in $HOME/Shell/*.sh
 do
   . "$i"
 done
