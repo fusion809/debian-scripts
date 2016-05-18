@@ -8,7 +8,7 @@ function cdman {
 alias cdmn=cdman
 
 function cdd {
-	cd ~/GitHub/debian-scripts
+	cd ~/GitHub/mine/debian-scripts
 }
 
 # MediaWiki
@@ -170,29 +170,29 @@ function cdsp {
 }
 
 function cdms {
-	cd ~/GitHub/moksha-scripts
+	cd ~/GitHub/mine/moksha-scripts
 }
 
 function cdss {
-	cd ~/GitHub/debian-scripts
+	cd ~/GitHub/mine/debian-scripts
 }
 
 function cdgs {
-	cd ~/GitHub/sabayon-tools
+	cd ~/GitHub/mine/sabayon-tools
 }
 
 alias cdst=cdgs
 
 function cdlx {
-	cd $HOME/GitHub/LXDE-menu
+	cd $HOME/GitHub/mine/LXDE-menu
 }
 
 function cdfgi {
-	cd ~/GitHub/fusion809.github.io
+	cd ~/GitHub/mine/fusion809.github.io
 }
 
 function cdgf {
-	cd ~/GitHub/hugo-website
+	cd ~/GitHub/mine/hugo-website
 }
 
 alias cdweb=cdgf
