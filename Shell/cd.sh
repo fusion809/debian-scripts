@@ -94,38 +94,38 @@ function cdic {
 }
 
 # VirtualBox
-	function cdv {
-		cd "$HOME/VirtualBox VMs"
-	}
+function cdv {
+	cd "$HOME/VirtualBox VMs"
+}
 
-	function cdvi {
-		cd "$HOME/VirtualBox VMs/ISO"
-	}
+function cdvi {
+	cd "$HOME/VirtualBox VMs/ISO"
+}
 
-	function cdvbm {
-		cd "$HOME/Desktop/VirtualBox machines"
-	}
+function cdvbm {
+	cd "$HOME/Desktop/VirtualBox machines"
+}
 
-	alias cdvb=cdvbm
+alias cdvb=cdvbm
 #- End of VirtualBox -#
 
 # WordPress
 
-	function cdwp {
-		cd $WP
-	}
+function cdwp {
+	cd $WP
+}
 
-	function cdwpp {
-		cd $WP_CON/plugins
-	}
+function cdwpp {
+	cd $WP_CON/plugins
+}
 
-	function cdwpt {
-		cd $WP_CON/themes
-	}
+function cdwpt {
+	cd $WP_CON/themes
+}
 
-	function cdwpu {
-		cd $WP_CON/uploads
-	}
+function cdwpu {
+	cd $WP_CON/uploads
+}
 
 #- End of WordPress -#
 
