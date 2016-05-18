@@ -1,14 +1,15 @@
 function cdm {
-	cd ~/Music
+	cd $HOME/Music
 }
 
 function cdman {
-	cd ~/Documents/Manpages
+	cd $HOME/Documents/Manpages
 }
+
 alias cdmn=cdman
 
 function cdd {
-	cd ~/GitHub/mine/debian-scripts
+	cd $HOME/GitHub/mine/debian-scripts
 }
 
 # MediaWiki
@@ -31,50 +32,50 @@ function cdmwm {
 #----- End of MediaWiki -----#
 
 function cdps {
-		cd ~/ps_mem
+	cd $HOME/ps_mem
 }
 
 # Programs
 
 function cdp {
-	cd ~/Programs
+	cd $HOME/Programs
 }
 
 function cdph {
-	cd ~/Programs/Hawaii
+	cd $HOME/Programs/Hawaii
 }
 
 alias cdhaw=cdph
 
 function cdat {
-	cd ~/Programs/atom*
+	cd $HOME/Programs/atom*
 }
 
 function cdmok {
-	cd ~/Programs/Moksha
+	cd $HOME/Programs/Moksha
 }
 
 function cdmokm {
-	cd ~/Programs/Moksha/moksha-modules-extra-master
+	cd $HOME/Programs/Moksha/moksha-modules-extra-master
 }
 
 # Pictures
 function cdpi {
-	cd ~/Pictures
+	cd $HOME/Pictures
 }
 
 function cdi {
-	cd ~/Pictures/Icons
+	cd $HOME/Pictures/Icons
 }
 
 function cds {
-	cd ~/Pictures/Screenshots
+	cd $HOME/Pictures/Screenshots
 }
 
 #- End of Pictures -#
 
 function cdsh {
-	cd ~/Shell
+	cd $HOME/Shell
 }
 
 # Applications
@@ -130,16 +131,16 @@ function cdwpu {
 #- End of WordPress -#
 
 function cdy {
-	cd ~/Videos/YouTube
+	cd $HOME/Videos/YouTube
 }
 
 function cdvs {
-	cd ~/Videos/Spec
+	cd $HOME/Videos/Spec
 }
 
 # GitHub
 function cdg {
-	cd ~/GitHub/
+	cd $HOME/GitHub/
 }
 
 function cdgm {
@@ -170,15 +171,15 @@ function cdsp {
 }
 
 function cdms {
-	cd ~/GitHub/mine/moksha-scripts
+	cd $HOME/GitHub/mine/moksha-scripts
 }
 
 function cdss {
-	cd ~/GitHub/mine/debian-scripts
+	cd $HOME/GitHub/mine/debian-scripts
 }
 
 function cdgs {
-	cd ~/GitHub/mine/sabayon-tools
+	cd $HOME/GitHub/mine/sabayon-tools
 }
 
 alias cdst=cdgs
@@ -188,15 +189,15 @@ function cdlx {
 }
 
 function cdfgi {
-	cd ~/GitHub/mine/fusion809.github.io
+	cd $HOME/GitHub/mine/fusion809.github.io
 }
 
 function cdgf {
-	cd ~/GitHub/mine/hugo-website
+	cd $HOME/GitHub/mine/hugo-website
 }
 
 alias cdweb=cdgf
 
 function cdt {
-	cd ~/Textbooks
+	cd $HOME/Textbooks
 }
