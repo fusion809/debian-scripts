@@ -73,25 +73,25 @@ function cds {
 
 #- End of Pictures -#
 
-	function cdsh {
-		cd ~/Shell
-	}
+function cdsh {
+	cd ~/Shell
+}
 
 # Applications
-	function cdap {
-		cd $AP
-	}
+function cdap {
+	cd $AP
+}
 
-	function cdvap {
-		cd $AP/VirtualBox
-	}
+function cdvap {
+	cd $AP/VirtualBox
+}
 
-	alias cdapv=cdvap
+alias cdapv=cdvap
 
-	# Icons
-	function cdic {
-		cd $IC
-	}
+# Icons
+function cdic {
+	cd $IC
+}
 
 # VirtualBox
 	function cdv {
@@ -195,7 +195,7 @@ function cdgf {
 	cd ~/GitHub/hugo-website
 }
 
-	alias cdweb=cdgf
+alias cdweb=cdgf
 
 function cdt {
 	cd ~/Textbooks
