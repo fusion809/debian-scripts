@@ -145,6 +145,7 @@ function cdg {
 
 function cdgm {
 	cd $HOME/GitHub/mine
+}
 
 function cdgp {
 	cd $PAK
