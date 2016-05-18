@@ -142,9 +142,12 @@ function cdg {
 	cd ~/GitHub/
 }
 
-	function cdgp {
-		cd $PAK
-	}
+function cdgm {
+	cd $HOME/GitHub/mine
+
+function cdgp {
+	cd $PAK
+}
 
 	alias cdpak=cdgp
 

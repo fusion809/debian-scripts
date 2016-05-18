@@ -118,3 +118,4 @@ for i in $HOME/Shell/*.sh
 do
     . "$i"
 done
+PATH=$PATH:$HOME/.local/bin
