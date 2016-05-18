@@ -1,9 +1,9 @@
 function cpmang {
-  sudo cp -a /usr/share/man/man$1/$2.$1.gz $HOME/Documents/Manpages
+  sudo cp -a /usr/share/man/man$1/$2.$1.gz ~/Documents/Manpages
 }
 
 function cpman {
-  sudo cp -a /usr/share/man/man$1/$2.$1 $HOME/Documents/Manpages
+  sudo cp -a /usr/share/man/man$1/$2.$1 ~/Documents/Manpages
 }
 
 function manconv {
@@ -16,7 +16,7 @@ function manconv {
 }
 
 function manconvg {
-  pushd $HOME/Documents/Manpages
+  pushd ~/Documents/Manpages
   sudo chmod 777 -R $2.$1.gz
   zcat $2.$1.gz | groff -mandoc -Thtml > $2.$1.html
   sudo chmod 777 -R *

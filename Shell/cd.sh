@@ -1,14 +1,14 @@
 function cdm {
-	cd $HOME/Music
+	cd ~/Music
 }
 
 function cdman {
-	cd $HOME/Documents/Manpages
+	cd ~/Documents/Manpages
 }
 alias cdmn=cdman
 
 function cdd {
-	cd $HOME/GitHub/debian-scripts
+	cd ~/GitHub/debian-scripts
 }
 
 # MediaWiki
@@ -31,50 +31,50 @@ function cdmwm {
 #----- End of MediaWiki -----#
 
 function cdps {
-		cd $HOME/ps_mem
+		cd ~/ps_mem
 }
 
 # Programs
 
 function cdp {
-	cd $HOME/Programs
+	cd ~/Programs
 }
 
 function cdph {
-	cd $HOME/Programs/Hawaii
+	cd ~/Programs/Hawaii
 }
 
 alias cdhaw=cdph
 
 function cdat {
-	cd $HOME/Programs/atom*
+	cd ~/Programs/atom*
 }
 
 function cdmok {
-	cd $HOME/Programs/Moksha
+	cd ~/Programs/Moksha
 }
 
 function cdmokm {
-	cd $HOME/Programs/Moksha/moksha-modules-extra-master
+	cd ~/Programs/Moksha/moksha-modules-extra-master
 }
 
 # Pictures
 function cdpi {
-	cd $HOME/Pictures
+	cd ~/Pictures
 }
 
 function cdi {
-	cd $HOME/Pictures/Icons
+	cd ~/Pictures/Icons
 }
 
 function cds {
-	cd $HOME/Pictures/Screenshots
+	cd ~/Pictures/Screenshots
 }
 
 #- End of Pictures -#
 
 	function cdsh {
-		cd $HOME/Shell
+		cd ~/Shell
 	}
 
 # Applications
@@ -130,16 +130,16 @@ function cds {
 #- End of WordPress -#
 
 function cdy {
-	cd $HOME/Videos/YouTube
+	cd ~/Videos/YouTube
 }
 
 function cdvs {
-	cd $HOME/Videos/Spec
+	cd ~/Videos/Spec
 }
 
 # GitHub
 function cdg {
-	cd $HOME/GitHub/
+	cd ~/GitHub/
 }
 
 function cdgm {
@@ -149,54 +149,54 @@ function cdgp {
 	cd $PAK
 }
 
-	alias cdpak=cdgp
+alias cdpak=cdgp
 
-		function cdgpa {
-			cd $PAK/arch-builder
-		}
+function cdgpa {
+	cd $PAK/arch-builder
+}
 
-		alias cdarch=cdgpa
-		alias cdar=cdgpa
-		alias cdgab=cdgpa
-		alias cdpab=cdgpa
-		alias cdab=cdgpa
+alias cdarch=cdgpa
+alias cdar=cdgpa
+alias cdgab=cdgpa
+alias cdpab=cdgpa
+alias cdab=cdgpa
 
-		function cdgen {
-			cd $PAK/gentoo-packer
-		}
+function cdgen {
+	cd $PAK/gentoo-packer
+}
 
-		function cdsp {
-			cd $PAK/sabayon-packer
-		}
+function cdsp {
+	cd $PAK/sabayon-packer
+}
 
-	function cdms {
-		cd $HOME/GitHub/moksha-scripts
-	}
+function cdms {
+	cd ~/GitHub/moksha-scripts
+}
 
-	function cdss {
-		cd $HOME/GitHub/debian-scripts
-	}
+function cdss {
+	cd ~/GitHub/debian-scripts
+}
 
-	function cdgs {
-		cd $HOME/GitHub/sabayon-tools
-	}
+function cdgs {
+	cd ~/GitHub/sabayon-tools
+}
 
-	alias cdst=cdgs
+alias cdst=cdgs
 
-	function cdlx {
-		cd $HOME/GitHub/LXDE-menu
-	}
+function cdlx {
+	cd $HOME/GitHub/LXDE-menu
+}
 
-	function cdfgi {
-		cd $HOME/GitHub/fusion809.github.io
-	}
+function cdfgi {
+	cd ~/GitHub/fusion809.github.io
+}
 
-	function cdgf {
-		cd $HOME/GitHub/hugo-website
-	}
+function cdgf {
+	cd ~/GitHub/hugo-website
+}
 
 	alias cdweb=cdgf
 
 function cdt {
-	cd $HOME/Textbooks
+	cd ~/Textbooks
 }

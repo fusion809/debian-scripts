@@ -1,14 +1,14 @@
 function abash {
 	if [[ $# > 0 ]]
 		then
-			atom $HOME/Shell/"$1".sh
+			atom ~/Shell/"$1".sh
 		else
-			atom $HOME/.bashrc
+			atom ~/.bashrc
 	fi
 }
 
 function abashs {
-	pushd $HOME/Shell
+	pushd ~/Shell
 	if [[ -n $1 ]]
 	        then
 	            atom $1.sh
@@ -23,16 +23,16 @@ function abashs {
 }
 
 function sbash {
-	source $HOME/.bashrc
+	source ~/.bashrc
 }
 
 function nbash {
-	nano $HOME/.bashrc
+	nano ~/.bashrc
 }
 
 function gbash {
-	gvim $HOME/.bashrc
-        pushd $HOME/Shell
+	gvim ~/.bashrc
+        pushd ~/Shell
         if [[ -n $1 ]]
                 then
                     gvim $1.sh
