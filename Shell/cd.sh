@@ -9,7 +9,7 @@ function cdman {
 alias cdmn=cdman
 
 function cdd {
-	cd $HOME/GitHub/mine/debian-scripts
+	cd $HOME/GitHub/debian-scripts
 }
 
 # MediaWiki
@@ -32,7 +32,7 @@ function cdmwm {
 #----- End of MediaWiki -----#
 
 function cdps {
-	cd $HOME/ps_mem
+		cd $HOME/ps_mem
 }
 
 # Programs
@@ -89,7 +89,7 @@ function cdvap {
 
 alias cdapv=cdvap
 
-# Icons
+	# Icons
 function cdic {
 	cd $IC
 }
@@ -145,7 +145,6 @@ function cdg {
 
 function cdgm {
 	cd $HOME/GitHub/mine
-}
 
 function cdgp {
 	cd $PAK
@@ -172,15 +171,15 @@ function cdsp {
 }
 
 function cdms {
-	cd ~/GitHub/moksha-scripts
+	cd $HOME/GitHub/moksha-scripts
 }
 
 function cdss {
-	cd ~/GitHub/debian-scripts
+	cd $HOME/GitHub/debian-scripts
 }
 
 function cdgs {
-	cd ~/GitHub/sabayon-tools
+	cd $HOME/GitHub/sabayon-tools
 }
 
 alias cdst=cdgs
@@ -190,61 +189,11 @@ function cdlx {
 }
 
 function cdfgi {
-	cd ~/GitHub/fusion809.github.io
+	cd $HOME/GitHub/fusion809.github.io
 }
 
 function cdgf {
-	cd ~/GitHub/hugo-website
-}
-
-function cdgp {
-	cd $PAK
-}
-
-alias cdpak=cdgp
-
-function cdgpa {
-	cd $PAK/arch-builder
-}
-
-alias cdarch=cdgpa
-alias cdar=cdgpa
-alias cdgab=cdgpa
-alias cdpab=cdgpa
-alias cdab=cdgpa
-
-function cdgen {
-	cd $PAK/gentoo-packer
-}
-
-function cdsp {
-	cd $PAK/sabayon-packer
-}
-
-function cdms {
-	cd $HOME/GitHub/mine/moksha-scripts
-}
-
-function cdss {
-	cd $HOME/GitHub/mine/debian-scripts
-}
-
-function cdgs {
-	cd $HOME/GitHub/mine/sabayon-tools
-}
-
-alias cdst=cdgs
-
-function cdlx {
-	cd $HOME/GitHub/mine/LXDE-menu
-}
-
-function cdfgi {
-	cd $HOME/GitHub/mine/fusion809.github.io
-}
-
-function cdgf {
-	cd $HOME/GitHub/mine/hugo-website
+	cd $HOME/GitHub/hugo-website
 }
 
 alias cdweb=cdgf

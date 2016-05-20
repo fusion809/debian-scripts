@@ -1,3 +1,3 @@
 function clipf {
-  xclip -sel clip < $1
+        xclip -sel clip < $1
 }
