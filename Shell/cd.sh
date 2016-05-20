@@ -73,59 +73,59 @@ function cds {
 
 #- End of Pictures -#
 
-	function cdsh {
-		cd ~/Shell
-	}
+function cdsh {
+	cd ~/Shell
+}
 
 # Applications
-	function cdap {
-		cd $AP
-	}
+function cdap {
+	cd $AP
+}
 
-	function cdvap {
-		cd $AP/VirtualBox
-	}
+function cdvap {
+	cd $AP/VirtualBox
+}
 
-	alias cdapv=cdvap
+alias cdapv=cdvap
 
 	# Icons
-	function cdic {
-		cd $IC
-	}
+function cdic {
+	cd $IC
+}
 
 # VirtualBox
-	function cdv {
-		cd "$HOME/VirtualBox VMs"
-	}
+function cdv {
+	cd "$HOME/VirtualBox VMs"
+}
 
-	function cdvi {
-		cd "$HOME/VirtualBox VMs/ISO"
-	}
+function cdvi {
+	cd "$HOME/VirtualBox VMs/ISO"
+}
 
-	function cdvbm {
-		cd "$HOME/Desktop/VirtualBox machines"
-	}
+function cdvbm {
+	cd "$HOME/Desktop/VirtualBox machines"
+}
 
-	alias cdvb=cdvbm
+alias cdvb=cdvbm
 #- End of VirtualBox -#
 
 # WordPress
 
-	function cdwp {
-		cd $WP
-	}
+function cdwp {
+	cd $WP
+}
 
-	function cdwpp {
-		cd $WP_CON/plugins
-	}
+function cdwpp {
+	cd $WP_CON/plugins
+}
 
-	function cdwpt {
-		cd $WP_CON/themes
-	}
+function cdwpt {
+	cd $WP_CON/themes
+}
 
-	function cdwpu {
-		cd $WP_CON/uploads
-	}
+function cdwpu {
+	cd $WP_CON/uploads
+}
 
 #- End of WordPress -#
 
@@ -142,57 +142,60 @@ function cdg {
 	cd ~/GitHub/
 }
 
-	function cdgp {
-		cd $PAK
-	}
+function cdgm {
+	cd $HOME/GitHub/mine
 
-	alias cdpak=cdgp
+function cdgp {
+	cd $PAK
+}
 
-		function cdgpa {
-			cd $PAK/arch-builder
-		}
+alias cdpak=cdgp
 
-		alias cdarch=cdgpa
-		alias cdar=cdgpa
-		alias cdgab=cdgpa
-		alias cdpab=cdgpa
-		alias cdab=cdgpa
+function cdgpa {
+	cd $PAK/arch-builder
+}
 
-		function cdgen {
-			cd $PAK/gentoo-packer
-		}
+alias cdarch=cdgpa
+alias cdar=cdgpa
+alias cdgab=cdgpa
+alias cdpab=cdgpa
+alias cdab=cdgpa
 
-		function cdsp {
-			cd $PAK/sabayon-packer
-		}
+function cdgen {
+	cd $PAK/gentoo-packer
+}
 
-	function cdms {
-		cd ~/GitHub/moksha-scripts
-	}
+function cdsp {
+	cd $PAK/sabayon-packer
+}
 
-	function cdss {
-		cd ~/GitHub/debian-scripts
-	}
+function cdms {
+	cd ~/GitHub/moksha-scripts
+}
 
-	function cdgs {
-		cd ~/GitHub/sabayon-tools
-	}
+function cdss {
+	cd ~/GitHub/debian-scripts
+}
 
-	alias cdst=cdgs
+function cdgs {
+	cd ~/GitHub/sabayon-tools
+}
 
-	function cdlx {
-		cd $HOME/GitHub/LXDE-menu
-	}
+alias cdst=cdgs
 
-	function cdfgi {
-		cd ~/GitHub/fusion809.github.io
-	}
+function cdlx {
+	cd $HOME/GitHub/LXDE-menu
+}
 
-	function cdgf {
-		cd ~/GitHub/hugo-website
-	}
+function cdfgi {
+	cd ~/GitHub/fusion809.github.io
+}
 
-	alias cdweb=cdgf
+function cdgf {
+	cd ~/GitHub/hugo-website
+}
+
+alias cdweb=cdgf
 
 function cdt {
 	cd ~/Textbooks
