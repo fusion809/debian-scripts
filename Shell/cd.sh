@@ -32,7 +32,7 @@ function cdmwm {
 #----- End of MediaWiki -----#
 
 function cdps {
-		cd $HOME/ps_mem
+	cd $HOME/ps_mem
 }
 
 # Programs
@@ -145,6 +145,7 @@ function cdg {
 
 function cdgm {
 	cd $HOME/GitHub/mine
+}
 
 function cdgp {
 	cd $PAK
