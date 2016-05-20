@@ -1,4 +1,3 @@
 function szsh {
-	source ~/.zshrc
+	source $HOME/.zshrc
 }
-
