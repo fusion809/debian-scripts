@@ -114,9 +114,7 @@ fi
 
 PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \['
 
-. $HOME/Shell/01-variables.sh
-
-for i in $HOME/Shell/{02,03,04,05,06,07,08,09,1}-*.sh
+for i in $HOME/Shell/*.sh
 do
   . "$i"
 done
