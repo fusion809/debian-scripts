@@ -1,0 +1,5 @@
+function szsh {
+	source ~/.zshrc
+}
+
+
