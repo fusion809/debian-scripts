@@ -27,7 +27,7 @@ function edpk {
 }
 
 function edsh {
-  atom $HOME/{.bashrc,.zshrc,Shell}
+  atom $HOME/Shell
 }
 
 function edvsi {

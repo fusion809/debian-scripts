@@ -114,8 +114,10 @@ fi
 
 PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \['
 
-for i in $HOME/Shell/*.sh
+. $HOME/Shell/01-variables.sh
+
+for i in $HOME/Shell/{02,03,04,05,06,07,08,09,10}-*.sh
 do
-    . "$i"
+  . "$i"
 done
 PATH=$PATH:$HOME/.local/bin
