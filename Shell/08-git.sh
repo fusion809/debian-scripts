@@ -65,7 +65,7 @@ function cps {
   cp -a $HOME/Shell/* $GHUBM/debian-scripts/Shell
   cp -a $HOME/.bashrc $GHUBM/debian-scripts/
   sudo cp -a /root/.bashrc $GHUBM/debian-scripts/root/
-  sudo cp -a /root/Shell $GHUBM/debian-scripts/root/Shell
+  sudo cp -a /root/Shell/* $GHUBM/debian-scripts/root/Shell
 }
 
 ## Update GitHub/debian-scripts GitHub repo
