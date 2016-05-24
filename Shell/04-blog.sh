@@ -1,9 +1,9 @@
 function jekex {
   cdfgi
-  bundle exec jekyll serve
+  bundle exec jekyll serve -I
 }
 
-function blogup {
-  cd $GHUBM/fusion809.github.io
-  push "$@"
+function jekexc {
+  cdfgi
+  bundle exec jekyll serve
 }

@@ -1,4 +1,4 @@
-#!/bin/bash
+# Run scripts in the pms subfolder
 for i in $HOME/Shell/pms/*.sh
 do
   . "$i"
