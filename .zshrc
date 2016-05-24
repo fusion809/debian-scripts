@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 
 . $HOME/Shell/01-variables.sh
 
-for i in $HOME/Shell/{02,03,04,05,06,07,08,09,10}-*.sh
+for i in $HOME/Shell/{02,03,04,05,06,07,08,09}-*.sh
 do
   . "$i"
 done
