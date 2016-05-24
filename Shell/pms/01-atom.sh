@@ -1,9 +1,9 @@
 function apmi {
-  apm install $i
+  apm install "$@"
 }
 
 function apmr {
-  apm remove $i
+  apm remove "$@"
 }
 
 function apmup {
