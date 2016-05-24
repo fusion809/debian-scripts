@@ -4,7 +4,6 @@ function cps {
   rm -rf $DBS/Shell && mkdir $DBS/Shell
   sudo rm -rf $DBS/root/Shell
   cp -a $HOME/Shell/* $DBS/Shell
-  rm $DBS/Shell/{.bashrc,.zshrc}
   cp -a $HOME/{.bashrc,.zshrc} $DBS/
   sudo cp -a /root/{Shell,.bashrc,.zshrc} $DBS/root/
 }
