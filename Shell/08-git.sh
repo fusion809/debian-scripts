@@ -22,7 +22,7 @@ alias gits=gitsw
 function gitc {
   git clone git@github.com:fusion809/$1.git $GHUBM/$1
   pushd $1
-    git remote add upstream git@github.com:$2/$1.git $GHUBO/$1
+    gitsw
   popd
 }
 
@@ -62,15 +62,18 @@ function pushss {
 # GitHub/debian-scripts
 ## Update local GitHub/debian-scripts repo
 function cps {
+  chmod +x -R $HOME/Shell/
   cp -a $HOME/Shell/* $GHUBM/debian-scripts/Shell
-  cp -a $HOME/.bashrc $GHUBM/debian-scripts/
-  sudo cp -a /root/.bashrc $GHUBM/debian-scripts/root/
-  sudo cp -a /root/Shell/* $GHUBM/debian-scripts/root/Shell
+  cp -a $HOME/{.bashrc,.zshrc} $GHUBM/debian-scripts/
+  sudo chmod +x -R /root/Shell/
+  sudo cp -a /root/{.bashrc,.zshrc} $GHUBM/debian-scripts/root/
+  sudo rm -rf $GHUBM/debian-scripts/root/Shell
+  sudo cp -a /root/Shell $GHUBM/debian-scripts/root
 }
 
 ## Update GitHub/debian-scripts GitHub repo
 function shup {
-  cps && cdss && push "$1"
+  cps && cdss && push "$1" && szsh
 }
 
 #############################################################

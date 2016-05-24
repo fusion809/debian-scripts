@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh installation.
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.gem/ruby/2.2.0/bin:/home/fusion809/.gem/ruby/2.2.0/bin:/usr/lib/jvm/java-8-openjdk/bin/:/bin:/usr/bin:/sbin:/usr/sbin"
 export ZSH=/home/fusion809/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -71,8 +72,6 @@ bindkey '^[[B' history-substring-search-down
 # bindkey -M vicmd 'j' history-substring-search-down
 
 # User configuration
-
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.gem/ruby/2.2.0/bin:/home/fusion809/.gem/ruby/2.2.0/bin:/usr/lib/jvm/java-8-openjdk/bin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
