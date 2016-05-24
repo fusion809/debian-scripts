@@ -48,7 +48,11 @@ function cdph {
 alias cdhaw=cdph
 
 function cdat {
-	cd $HOME/Programs/atom*
+	cd $HOME/.atom
+}
+
+function cdsat {
+	cd $GHUB/atom-*
 }
 
 function cdmok {
@@ -147,42 +151,12 @@ function cdgm {
 	cd $GHUBM
 }
 
-function cdgp {
-	cd $PAK
-}
-
-alias cdpak=cdgp
-
-function cdgpa {
-	cd $PAK/arch-builder
-}
-
-alias cdarch=cdgpa
-alias cdar=cdgpa
-alias cdgab=cdgpa
-alias cdpab=cdgpa
-alias cdab=cdgpa
-
-function cdgen {
-	cd $PAK/gentoo-packer
-}
-
-function cdsp {
-	cd $PAK/sabayon-packer
+function cdgo {
+	cd $GHUBO
 }
 
 function cdss {
 	cd $GHUBM/debian-scripts
-}
-
-function cdgs {
-	cd $GHUBM/sabayon-tools
-}
-
-alias cdst=cdgs
-
-function cdlx {
-	cd $GHUBM/LXDE-menu
 }
 
 function cdfgi {

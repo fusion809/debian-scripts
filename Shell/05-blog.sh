@@ -4,6 +4,6 @@ function jekex {
 }
 
 function blogup {
-  cd $GHUB/fusion809.github.io
+  cd $GHUBM/fusion809.github.io
   push "$@"
 }
