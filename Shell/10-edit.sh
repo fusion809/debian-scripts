@@ -10,6 +10,8 @@ function edfgi {
   atom $GHUBM/fusion809.github.io
 }
 
+alias edblog=edfgi
+
 function edfi {
   atom $GHUBM/fusion-ui
 }
