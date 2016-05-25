@@ -3,6 +3,11 @@ function edai {
   atom $GHUBM/atom-installer
 }
 
+# Atom config settings
+function edat {
+  atom $HOME/.atom
+}
+
 # Brackets Installer
 function edbi {
   atom $GHUBM/brackets-installer
