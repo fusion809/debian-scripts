@@ -3,6 +3,11 @@ function sacs {
 	sudo apt-cache search $@
 }
 
+# Clean cache
+function sagar {
+	sudo apt-get autoremove -y
+}
+
 # Install package(s)
 function sagi {
 	sudo apt-get install -y $@
@@ -18,7 +23,12 @@ function sagu {
 	sudo apt-get update
 }
 
+# Upgrade packages
+function sagug {
+	sudo apt-get upgrade -y
+}
+
 # Update cache, upgrade packages, remove unneeded package(s) and update Atom packages.
 function update {
-	sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y && apmup
+	sagu && sagug && sagar && apmup
 }

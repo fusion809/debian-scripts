@@ -15,12 +15,11 @@ function cdai {
 	cd $GHUBM/atom-installer
 }
 
-function cdd {
+function cdds {
 	cd $GHUBM/debian-scripts
 }
 
-alias cdds=cdd
-alias cdss=cdd
+alias cdss=cdds
 
 function cdfgi {
 	cd $GHUBM/fusion809.github.io
