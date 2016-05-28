@@ -32,3 +32,7 @@ function cdvsi {
 function cdsat {
 	cd $GHUB/atom-*[0-9]
 }
+
+function cdpk {
+	cd $PKG
+}
