@@ -3,6 +3,10 @@ function cdg {
 	cd $GHUB
 }
 
+function cdga {
+	cd $GHUB/atom
+}
+
 function cdgm {
 	cd $GHUBM
 }
