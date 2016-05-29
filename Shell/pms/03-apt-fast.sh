@@ -19,3 +19,11 @@ alias safi=sagif
 function sagrf {
   sudo apt-fast remove -y $@
 }
+
+function safa {
+  sudo apt-fast autoremove -y
+}
+
+function updatef {
+  safu && safup && safa && apmup
+}
