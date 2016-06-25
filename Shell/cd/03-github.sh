@@ -3,6 +3,10 @@ function cdg {
 	cd $GHUB
 }
 
+function cdga {
+	cd $GHUB/atom
+}
+
 function cdgm {
 	cd $GHUBM
 }
@@ -31,4 +35,8 @@ function cdvsi {
 
 function cdsat {
 	cd $GHUB/atom-*[0-9]
+}
+
+function cdpk {
+	cd $PKG
 }

@@ -1,3 +1,4 @@
+#!/bin/bash
 # Create GitHub directory
 if ! [[ -d $HOME/GitHub ]]; then
   mkdir $HOME/GitHub
@@ -7,7 +8,7 @@ fi
 sudo apt-get install -y openssh-server zsh
 
 # Clone debian-scripts repo
-if ! [[ -d $HOME/GitHub/debian-scripts ]] || ! [[ -d $HOME/GitHub/mine/debian-scripts ]]; then
+if ! [[ -d $HOME/GitHub/mine/debian-scripts ]]; then
   git clone https://github.com/fusion809/debian-scripts $HOME/GitHub/mine/debian-scripts
   # Copy across
   cp -a $HOME/GitHub/mine/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
@@ -37,7 +38,7 @@ else
   cd -
 fi
 
-if ! [[ -d $HOME/GitHub/zsh-theme ]] || ! [[ -d $HOME/GitHub/mine/zsh-theme ]]; then
+if ! [[ -d $HOME/GitHub/mine/zsh-theme ]]; then
 # Get my self-made zsh-themes
   git clone https://github.com/fusion809/zsh-theme $HOME/GitHub/mine/zsh-theme
   cp -a $HOME/GitHub/mine/zsh-theme/*.zsh-theme $HOME/.oh-my-zsh/themes/

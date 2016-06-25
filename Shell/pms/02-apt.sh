@@ -32,3 +32,11 @@ function sagug {
 function update {
 	sagu && sagug && sagar && apmup
 }
+
+# Get keys
+function sak {
+	for i in "$@"
+	do
+		gpg --keyserver keyserver.ubuntu.com --recv $i && gpg --export --armor $i | sudo apt-key add -
+	done
+}
