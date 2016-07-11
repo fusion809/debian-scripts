@@ -2,6 +2,14 @@ function cdm {
 	cd $HOME/Music
 }
 
+function cddc {
+	cd $HOME/Documents/$1
+}
+
+function cdcl {
+	cddc CodeLite/firstExample
+}
+
 function cdman {
 	cd $HOME/Documents/Manpages
 }
