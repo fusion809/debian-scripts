@@ -1,28 +1,28 @@
 function cdat {
-	cd $HOME/.atom
+	cd $HOME/.atom/$1
 }
 
 # Applications
 function cdap {
-	cd $AP
+	cd $AP/$1
 }
 
 function cdd {
-	cd $HOME/.local/share/desktop-directories
+	cd $HOME/.local/share/desktop-directories/$1
 }
 
 # Icons
 function cdic {
-	cd $IC
+	cd $IC/$1
 }
 
 function cdvap {
-	cd $AP/VirtualBox
+	cdap VirtualBox/$1
 }
 
 alias cdapv=cdvap
 
 # Menus
 function cdmen {
-	cd $HOME/.config/menus
+	cd $HOME/.config/menus/$1
 }

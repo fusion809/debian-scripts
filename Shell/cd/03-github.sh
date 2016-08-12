@@ -1,46 +1,38 @@
 # GitHub
 function cdg {
-	cd $GHUB
-}
-
-function cdga {
-	cd $GHUB/atom
-}
-
-function cdga1 {
-	cd $GHUBM/atom-1
+	cd $GHUB/$1
 }
 
 function cdgm {
-	cd $GHUBM
+	cd $GHUBM/$1
+}
+
+function cdga {
+	cdgm atom/$1
 }
 
 function cdgo {
-	cd $GHUBO
+	cd $GHUBO/$1
 }
 
 function cdai {
-	cd $GHUBM/atom-installer
+	cdgm atom-installer/$1
 }
 
 function cdds {
-	cd $GHUBM/debian-scripts
+	cdgm debian-scripts/$1
 }
 
 alias cdss=cdds
 
 function cdfgi {
-	cd $GHUBM/fusion809.github.io
+	cdgm fusion809.github.io/$1
 }
 
 function cdvsi {
-	cd $GHUBM/vscode-installer
-}
-
-function cdsat {
-	cd $GHUB/atom-*[0-9]
+	cdgm vscode-installer/$1
 }
 
 function cdpk {
-	cd $PKG
+	cd $PKG/$1
 }

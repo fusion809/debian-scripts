@@ -1,18 +1,18 @@
 # MediaWiki
 function cdmw {
-	cd $MW
+	cd $MW/$1
 }
 
 function cdmwe {
-	cd $MW/extensions
+	cdmw extensions/$1
 }
 
 function cdmwi {
-	cd $MW/images
+	cdmw images/$1
 }
 
 function cdmwm {
-	cd $MW/maintenance
+	cdmw maintenance/$1
 }
 
 #----- End of MediaWiki -----#
@@ -20,19 +20,19 @@ function cdmwm {
 # WordPress
 
 function cdwp {
-	cd $WP
+	cd $WP/$1
 }
 
 function cdwpp {
-	cd $WP_CON/plugins
+	cd $WP_CON/plugins/$1
 }
 
 function cdwpt {
-	cd $WP_CON/themes
+	cd $WP_CON/themes/$1
 }
 
 function cdwpu {
-	cd $WP_CON/uploads
+	cd $WP_CON/uploads/$1
 }
 
 #- End of WordPress -#

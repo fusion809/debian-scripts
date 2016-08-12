@@ -1,5 +1,5 @@
 function cdm {
-	cd $HOME/Music
+	cd $HOME/Music/$1
 }
 
 function cddc {
@@ -7,60 +7,60 @@ function cddc {
 }
 
 function cdcl {
-	cddc CodeLite/firstExample
+	cddc CodeLite/firstExample/$1
 }
 
 function cdman {
-	cd $HOME/Documents/Manpages
+	cd $HOME/Documents/Manpages/$1
 }
 
 alias cdmn=cdman
 
 # Pictures
 function cdpi {
-	cd $HOME/Pictures
+	cd $HOME/Pictures/$1
 }
 
 function cdi {
-	cd $HOME/Pictures/Icons
+	cdpi Icons/$1
 }
 
 function cds {
-	cd $HOME/Pictures/Screenshots
+	cdpi Screenshots/$1
 }
 
 function cdps {
-	cd $HOME/ps_mem
+	cd $HOME/ps_mem/$1
 }
 
 function cdsh {
-	cd $HOME/Shell
+	cd $HOME/Shell/$1
 }
 
 function cdt {
-	cd $HOME/Textbooks
+	cd $HOME/Textbooks/$1
 }
 
 # VirtualBox
 function cdv {
-	cd "$HOME/VirtualBox VMs"
+	cd "$HOME/VirtualBox VMs/$1"
 }
 
 function cdvi {
-	cd "$HOME/VirtualBox VMs/ISO"
+	cdv ISO/$1
 }
 
 function cdvbm {
-	cd "$HOME/Desktop/VirtualBox machines"
+	cd "$HOME/Desktop/VirtualBox machines/$1"
 }
 
 alias cdvb=cdvbm
 #- End of VirtualBox -#
 
 function cdy {
-	cd $HOME/Videos/YouTube
+	cd $HOME/Videos/YouTube/$1
 }
 
 function cdvs {
-	cd $HOME/Videos/Spec
+	cd $HOME/Videos/Spec/$1
 }
