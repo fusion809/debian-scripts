@@ -1,3 +1,6 @@
+function cdam {
+	cd $srcdir/$1
+}
 function cdm {
 	cd $HOME/Music/$1
 }

@@ -3,3 +3,4 @@ export GOPATH=$HOME/go
 export GOROOT=/usr/lib/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
+export srcdir=$HOME/atom-modules
