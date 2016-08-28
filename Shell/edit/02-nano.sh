@@ -13,3 +13,13 @@ function nvim {
 function nds {
   nano *.desktop
 }
+
+function nps {
+  nano /etc/sddm.conf
+}
+
+function nas {
+  nano /etc/apt/sources.list
+}
+
+alias napt=nas
