@@ -9,3 +9,7 @@ function npk {
 function nvim {
   nano ~/.vimrc
 }
+
+function nds {
+  nano *.desktop
+}
