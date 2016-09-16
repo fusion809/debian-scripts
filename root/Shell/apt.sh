@@ -7,11 +7,11 @@ function apgi {
 }
 
 function update {
-	apt-get update && apt-get upgrade -y && apt-get autoremove -y && apt-get autoclean
+	apt-get update && apt-get upgrade -y --allow-unauthenticated && apt-get autoremove -y && apt-get autoclean
 }
 
 function updatef {
-	apt-fast update && apt-fast upgrade -y && apt-fast autoremove -y && apt-fast autoclean
+	apt-fast update && apt-fast upgrade -y --allow-unauthenticated && apt-fast autoremove -y && apt-fast autoclean
 }
 
 function afi {

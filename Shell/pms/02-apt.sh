@@ -10,7 +10,7 @@ function sagar {
 
 # Install package(s)
 function sagi {
-	sudo apt-get install -y $@
+	sudo apt-get install -y --allow-unauthenticated $@
 }
 
 # Uninstall (remove) package(s)
@@ -25,7 +25,7 @@ function sagu {
 
 # Upgrade packages
 function sagug {
-	sudo apt-get upgrade -y
+	sudo apt-get upgrade -y --allow-unauthenticated
 }
 
 # Update cache, upgrade packages, remove unneeded package(s) and update Atom packages.
