@@ -26,3 +26,7 @@ alias cdapv=cdvap
 function cdmen {
 	cd $HOME/.config/menus/$1
 }
+
+function cdz {
+	cd $HOME/.oh-my-zsh/$1
+}
