@@ -3,6 +3,10 @@ function edai {
   atom $GHUBM/atom-installer
 }
 
+function edac {
+  atom $GHUBM/atom-custom
+}
+
 # Atom config settings
 function edat {
   atom $HOME/.atom

@@ -15,6 +15,10 @@ function cdgo {
 	cd "$GHUBO/$1"
 }
 
+function cdac {
+	cdgm "atom-custom/$1"
+}
+
 function cdai {
 	cdgm "atom-installer/$1"
 }
