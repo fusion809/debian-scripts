@@ -15,3 +15,23 @@ function emcp {
 function emsp {
   emcp "Simple-Pendulum"
 }
+
+function eme {
+  emacs $HOME/.emacs
+}
+
+function emfgi {
+  emacs "$FGI/$1"
+}
+
+function emsh {
+  emacs "$HOME/Shell/$1"
+}
+
+function emgm {
+  emacs "$GHUBM/$1"
+}
+
+function emds {
+  emacs "$DBS/$1"
+}
