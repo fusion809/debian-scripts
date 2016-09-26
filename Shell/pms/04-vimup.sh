@@ -10,6 +10,6 @@ function vimup {
   ./configure --prefix
   make
   sudo checkinstall
-  mv *.deb $HOME/Programs
+  mv *.deb $HOME/Programs/Deb
   cd -
 }
