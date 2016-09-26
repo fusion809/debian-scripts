@@ -1,5 +1,5 @@
 function vimup {
-  if [[ -d $GHUBO/vim ]]; then
+  if ! [[ -d $GHUBO/vim ]]; then
     git clone https://github.com/vim/vim $GHUBO/vim
   fi
   cdgo vim
