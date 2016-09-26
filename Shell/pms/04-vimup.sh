@@ -4,6 +4,7 @@ function vimup {
   fi
   cdgo vim
   git stash
+  make distclean
   git pull --all
   git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
   unset srcdir
