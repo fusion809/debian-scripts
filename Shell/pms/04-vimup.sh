@@ -11,5 +11,5 @@ function vimup {
   make
   sudo checkinstall
   mv *.deb $HOME/Programs
-  cd ..
+  cd -
 }
