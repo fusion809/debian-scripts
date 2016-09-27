@@ -2,6 +2,10 @@ function agi {
 	apt-get install -y $@
 }
 
+function acs {
+	apt-cache search "$@"
+}
+
 function apgi {
 	aptitude install -y $@
 }
