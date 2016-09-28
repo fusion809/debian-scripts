@@ -9,8 +9,8 @@ function cddc {
 	cd $HOME/Documents/$1
 }
 
-function cdcl {
-	cddc CodeLite/firstExample/$1
+function cdcfe {
+	cddc "CodeLite/CPP-Math-Projects/$1"
 }
 
 function cdman {
