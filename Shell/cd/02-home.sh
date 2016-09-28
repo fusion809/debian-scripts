@@ -1,12 +1,17 @@
-function cdam {
-	cd $srcdir/$1
+function cdh {
+	cd "$HOME/$1"
 }
+
+function cdam {
+	cdh "atom-modules/$1"
+}
+
 function cdm {
-	cd $HOME/Music/$1
+	cdh "Music/$1"
 }
 
 function cddc {
-	cd $HOME/Documents/$1
+	cdh "Documents/$1"
 }
 
 function cdcfe {
@@ -14,39 +19,35 @@ function cdcfe {
 }
 
 function cdman {
-	cd $HOME/Documents/Manpages/$1
+	cdh "Documents/Manpages/$1"
 }
 
 alias cdmn=cdman
 
 # Pictures
 function cdpi {
-	cd $HOME/Pictures/$1
+	cdh "Pictures/$1"
 }
 
 function cdi {
-	cdpi Icons/$1
+	cdpi "Icons/$1"
 }
 
 function cds {
-	cdpi Screenshots/$1
-}
-
-function cdps {
-	cd $HOME/ps_mem/$1
+	cdpi "Screenshots/$1"
 }
 
 function cdsh {
-	cd $HOME/Shell/$1
+	cdh "Shell/$1"
 }
 
 function cdt {
-	cd $HOME/Textbooks/$1
+	cdh "Textbooks/$1"
 }
 
 # VirtualBox
 function cdv {
-	cd "$HOME/VirtualBox VMs/$1"
+	cdh "VirtualBox VMs/$1"
 }
 
 function cdvi {
@@ -54,16 +55,16 @@ function cdvi {
 }
 
 function cdvbm {
-	cd "$HOME/Desktop/VirtualBox machines/$1"
+	cdh "Desktop/VirtualBox machines/$1"
 }
 
 alias cdvb=cdvbm
 #- End of VirtualBox -#
 
 function cdy {
-	cd $HOME/Videos/YouTube/$1
+	cdh "Videos/YouTube/$1"
 }
 
 function cdvs {
-	cd $HOME/Videos/Spec/$1
+	cdh "Videos/Spec/$1"
 }
