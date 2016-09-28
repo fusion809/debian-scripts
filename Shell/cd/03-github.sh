@@ -40,3 +40,7 @@ function cdvsi {
 function cdpk {
 	cd "$PKG/$1"
 }
+
+function cdpy {
+	cdgm "python-scripts/$1"
+}
