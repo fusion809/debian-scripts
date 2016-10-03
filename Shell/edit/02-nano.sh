@@ -15,11 +15,11 @@ function nds {
 }
 
 function nps {
-  nano /etc/sddm.conf
+  sudo nano /etc/sddm.conf
 }
 
 function nas {
-  nano /etc/apt/sources.list
+  sudo nano /etc/apt/sources.list
 }
 
 alias napt=nas
