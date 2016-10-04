@@ -7,8 +7,12 @@ function cdap {
 	cd $AP/$1
 }
 
+function cdli {
+	cd $LS/icons/$1
+}
+
 function cdd {
-	cd $HOME/.local/share/desktop-directories/$1
+	cd $LS/desktop-directories/$1
 }
 
 # Icons
