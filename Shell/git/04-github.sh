@@ -29,3 +29,9 @@ function gitco {
 function ginit {
 	git init && git add --all && gitsw
 }
+
+function eshup {
+	cp $HOME/.emacs $GHUBM/emacs
+	cdgm emacs
+	push "$1"
+}
