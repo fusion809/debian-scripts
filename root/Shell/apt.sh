@@ -11,11 +11,11 @@ function apgi {
 }
 
 function update {
-	apt-get update && apt-get upgrade -y --allow-unauthenticated && apt-get autoremove -y && apt-get autoclean
+	apt-get update && apt-get upgrade -y --allow-unauthenticated && apt-get autoremove -y && apt-get autoclean && su - fusion809 -c "apm update"
 }
 
 function updatef {
-	apt-fast update && apt-fast upgrade -y --allow-unauthenticated && apt-fast autoremove -y && apt-fast autoclean
+	apt-fast update && apt-fast upgrade -y --allow-unauthenticated && apt-fast autoremove -y && apt-fast autoclean && su - fusion809 -c "apm update"
 }
 
 function afi {
