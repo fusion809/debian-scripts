@@ -7,6 +7,14 @@ function cdap {
 	cd $AP/$1
 }
 
+function cdapi {
+	cdap "integrated-development-environments/$1"
+}
+
+function cdapt {
+	cdap "text-editors/$1"
+}
+
 function cdli {
 	cd $LS/icons/$1
 }
