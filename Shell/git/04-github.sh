@@ -22,7 +22,11 @@ function gitc {
 }
 
 function gitco {
-	git clone https://github.com/$1/$2 $GHUBO/$2
+	if [[ -n "$3" ]]; then
+		git clone https://github.com/$1/$2 $GHUBO/$3
+	else
+		git clone https://github.com/$1/$2 $GHUBO/$2
+	fi
 }
 
 

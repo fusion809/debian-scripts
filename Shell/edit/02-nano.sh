@@ -7,7 +7,7 @@ function npk {
 }
 
 function nvim {
-  nano ~/.vimrc
+  nano $HOME/.vimrc
 }
 
 function nds {

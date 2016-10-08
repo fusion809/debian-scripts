@@ -1,6 +1,6 @@
 # Install Atom package
 function apmi {
-  apm install "$@"
+  apm install "$@" --no-confirm
 }
 
 # Remove Atom package
