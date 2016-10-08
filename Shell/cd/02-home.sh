@@ -15,7 +15,7 @@ function cddc {
 }
 
 function cdcfe {
-	cddc "CodeLite/CPP-Math-Projects/$1"
+	cd "$CC/$1"
 }
 
 function cdman {
