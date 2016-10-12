@@ -8,13 +8,15 @@ function vimup {
   make distclean
   git pull --all
   pkgver=$(git describe --tags `git rev-list --tags --max-count=1`)
+  _pkgver=${pkgver//v/}
   unset srcdir
   cdp
-  curl -L https://github.com/vim/vim/archive/$pkgver.tar.gz | tar xz --transform="s/vim-${pkgver//v/}/vim/"
+  curl -L https://github.com/vim/vim/archive/$pkgver.tar.gz | tar xz --transform="s/vim-${_pkgver}/vim/"
   cd vim
   ./configure --prefix=/usr
   make
-  sudo checkinstall --maintainer="Brenton Horne \<brentonhorne77@gmail.com\>" --pkgversion="$pkgver"
-  mv *.deb $HOME/Programs/Deb
+  sudo checkinstall --maintainer="Brenton Horne \<brentonhorne77@gmail.com\>" --pkgversion="${_pkgver}"
+  rm $HOME/Programs/Deb/vim*.deb
+  mv vim_${_pkgver}-1_amd64.deb $HOME/Programs/Deb
   cd $PWD
 }
