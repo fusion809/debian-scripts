@@ -14,7 +14,7 @@ function vimup {
   cd vim
   ./configure --prefix=/usr
   make
-  sudo checkinstall
+  sudo checkinstall --maintainer="Brenton Horne \<brentonhorne77@gmail.com\>" --pkgversion="$pkgver"
   mv *.deb $HOME/Programs/Deb
   cd $PWD
 }
