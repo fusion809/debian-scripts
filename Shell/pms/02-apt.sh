@@ -1,6 +1,11 @@
 # Search APT for package(s)
 function sacs {
-	sudo apt-cache search $@
+	sudo apt-cache search "$@"
+}
+
+# show APT cache record
+function saci {
+	sudo apt-cache show "$@"
 }
 
 # Clean cache
@@ -10,12 +15,12 @@ function sagar {
 
 # Install package(s)
 function sagi {
-	sudo apt-get install -y --allow-unauthenticated $@
+	sudo apt-get install -y --allow-unauthenticated "$@"
 }
 
 # Uninstall (remove) package(s)
 function sagr {
-	sudo apt-get remove -y $@
+	sudo apt-get remove -y "$@"
 }
 
 # Update APT cache
@@ -37,6 +42,6 @@ function update {
 function sak {
 	for i in "$@"
 	do
-		gpg --keyserver keyserver.ubuntu.com --recv $i && gpg --export --armor $i | sudo apt-key add -
+		gpg --keyserver keyserver.ubuntu.com --recv $i && gpg --export --armor "$i" | sudo apt-key add -
 	done
 }

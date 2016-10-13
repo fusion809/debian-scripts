@@ -11,13 +11,13 @@ function sagupf {
 alias safup=sagupf
 
 function sagif {
-  sudo apt-fast install -y $@
+  sudo apt-fast install -y "$@"
 }
 
 alias safi=sagif
 
 function sagrf {
-  sudo apt-fast remove -y $@
+  sudo apt-fast remove -y "$@"
 }
 
 function safa {
