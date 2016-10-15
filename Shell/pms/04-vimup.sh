@@ -13,7 +13,7 @@ function vimup {
   cdp
   curl -L https://github.com/vim/vim/archive/$pkgver.tar.gz | tar xz --transform="s/vim-${_pkgver}/vim/"
   cd vim
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr --enable-gui=gtk2
   make
   sudo checkinstall --maintainer="Brenton Horne \<brentonhorne77@gmail.com\>" --pkgversion="${_pkgver}"
   rm $HOME/Programs/Deb/vim*.deb
