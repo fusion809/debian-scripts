@@ -17,7 +17,7 @@ function vimup {
   make
   sudo checkinstall --maintainer="Brenton Horne \<brentonhorne77@gmail.com\>" --pkgversion="${_pkgver}"
   if ! [[ -f $HOME/Programs/Deb/vim*.deb ]]; then
-    rm $HOME/Programs/Deb/vim*.deb
+    sudo rm $HOME/Programs/Deb/vim*.deb
   fi
   mv vim_${_pkgver}-1_amd64.deb $HOME/Programs/Deb
   cd $PWD
