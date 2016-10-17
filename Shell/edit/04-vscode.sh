@@ -1,17 +1,17 @@
 function vsfgi {
-	code-oss $FGI
+	code-oss $FGI/$1
 }
 
 alias vsblog=vsfgi
 
 function vssh {
-	code-oss $SHL
+	code-oss $SHL/$1
 }
 
 function vspy {
-	code-oss $PY
+	code-oss $PY/$1
 }
 
 function vssp {
-	code-oss $HOME/Documents/CodeLite/CPP-Math-Projects/Simple-Pendulum
+	code-oss $HOME/Documents/CodeLite/CPP-Math-Projects/Simple-Pendulum/$1
 }

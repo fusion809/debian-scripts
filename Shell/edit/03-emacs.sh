@@ -13,7 +13,7 @@ function emcp {
 }
 
 function emsp {
-  emcp "Simple-Pendulum"
+  emcp "Simple-Pendulum/$1"
 }
 
 function eme {
