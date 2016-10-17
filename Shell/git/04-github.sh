@@ -10,6 +10,7 @@ function gitc {
 			fi
 			cd $HOME/.atom
 			gitsw
+			rm *.cson *.less *coffee
 			git pull origin master
 			cd -
 		elif ! [[ -d $GHUBM/$i ]]; then

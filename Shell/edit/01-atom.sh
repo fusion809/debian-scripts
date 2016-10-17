@@ -1,10 +1,10 @@
 # Atom Installer
 function edai {
-  atom $GHUBM/atom-installer
+  atom $GHUBM/atom-installer/$1
 }
 
 function edac {
-  atom $GHUBM/atom-custom
+  atom $GHUBM/atom-custom/$1
 }
 
 # Atom config settings
@@ -14,42 +14,42 @@ function edat {
 
 # Brackets Installer
 function edbi {
-  atom $GHUBM/brackets-installer
+  atom $GHUBM/brackets-installer/$1
 }
 
 # Blog
 function edfgi {
-  atom $GHUBM/fusion809.github.io
+  atom $GHUBM/fusion809.github.io/$1
 }
 
 alias edblog=edfgi
 
 # fusion-ui theme
 function edfi {
-  atom $GHUBM/fusion-ui
+  atom $GHUBM/fusion-ui/$1
 }
 
 # Komodo Installer
 function edki {
-  atom $GHUBM/komodo-installer
+  atom $GHUBM/komodo-installer/$1
 }
 
 # LightTable Installer
 function edli {
-  atom $GHUBM/lighttable-installer
+  atom $GHUBM/lighttable-installer/$1
 }
 
 # PKGBUILDs
 function edpk {
-  atom $GHUBM/PKGBUILDs
+  atom $GHUBM/PKGBUILDs/$1
 }
 
 # Shell scripts
 function edsh {
-  atom $HOME/Shell
+  atom $HOME/Shell/$1
 }
 
 # VSCode Installer
 function edvsi {
-  atom $GHUBM/vscode-installer
+  atom $GHUBM/vscode-installer/$1
 }
