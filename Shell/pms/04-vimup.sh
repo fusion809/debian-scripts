@@ -15,7 +15,7 @@ function vimup {
   cd vim
   ./configure --prefix=/usr --enable-gui=gtk2
   make
-  sudo checkinstall --maintainer="Brenton Horne \<brentonhorne77@gmail.com\>" --pkgversion="${_pkgver}"
+  sudo checkinstall --maintainer="Brenton Horne \<brentonhorne77@gmail.com\>" --pkgversion="${_pkgver}" --pkgname="gvim-gtk2"
   if ! [[ -f $HOME/Programs/Deb/vim*.deb ]]; then
     sudo rm $HOME/Programs/Deb/vim*.deb
   fi
