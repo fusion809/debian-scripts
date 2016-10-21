@@ -50,3 +50,7 @@ function edfi {
 function edsh {
   atom $HOME/Shell/$1
 }
+
+function edsp {
+  atom $HOME/Documents/CodeLite/CPP-Math-Projects/Simple-Pendulum
+}
