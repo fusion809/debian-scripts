@@ -36,9 +36,8 @@ function ginit {
 }
 
 function eshup {
-	cp $HOME/.emacs $GHUBM/emacs
-	cp $HOME/.emacs.d/tabbar.el $GHUBM/emacs
-	cdgm emacs
+	cp $HOME/.emacs $GHUBM/editors/emacs
+	cde
 	push "$1"
 	cd -
 }

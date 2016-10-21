@@ -15,32 +15,63 @@ function cdgo {
 	cd "$GHUBO/$1"
 }
 
+# installers
+function cdin {
+	cdgm "installers/$1"
+}
+
 function cdac {
-	cdgm "atom-custom/$1"
+	cdin "atom-custom/$1"
 }
 
 function cdai {
-	cdgm "atom-installer/$1"
+	cdin "atom-installer/$1"
+}
+
+function cdbi {
+	cdin "brackets-installer/$1"
+}
+
+function cdki {
+	cdin "komodo-installer/$1"
+}
+
+function cdli {
+	cdin "lighttable-installer/$1"
+}
+
+function cdvsi {
+	cdin "vscode-installer/$1"
+}
+
+# Scripts
+function cdsc {
+	cdgm "scripts/$1"
 }
 
 function cdds {
-	cdgm "debian-scripts/$1"
+	cdsc "debian-scripts/$1"
 }
 
 alias cdss=cdds
 
-function cdfgi {
-	cdgm "fusion809.github.io/$1"
-}
-
-function cdvsi {
-	cdgm "vscode-installer/$1"
-}
-
-function cdpk {
-	cd "$PKG/$1"
+function cdjs {
+	cdsc "JScripts/$1"
 }
 
 function cdpy {
-	cdgm "python-scripts/$1"
+	cdsc "python-scripts/$1"
+}
+
+# Websites
+function cdw {
+	cdgm "websites/$1"
+}
+function cdfgi {
+	cdw "fusion809.github.io/$1"
+}
+
+# Packaging
+function cdpk {
+	cdgm "packaging/$1"
 }
