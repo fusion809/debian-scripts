@@ -1,4 +1,4 @@
-function pacaur {
+function pacaup {
   chroot /mnt /usr/bin/pacaur-ubuntu
 }
 
