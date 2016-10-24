@@ -75,3 +75,13 @@ function cdfgi {
 function cdpk {
 	cdgm "packaging/$1"
 }
+
+alias cdpck=cdpk
+
+function cdaim {
+	cdpk "AppImages/$1"
+}
+
+function cdoaim {
+	cdgo "AppImages/$1"
+}
