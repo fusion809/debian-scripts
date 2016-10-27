@@ -61,10 +61,6 @@ function cdvbm {
 alias cdvb=cdvbm
 #- End of VirtualBox -#
 
-function cdy {
-	cdh "Videos/YouTube/$1"
-}
-
 function cdvs {
-	cdh "Videos/Spec/$1"
+	cdh "Videos/SO/$1"
 }
