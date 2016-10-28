@@ -1,3 +1,4 @@
+# git clone one of my GitHub repos
 function gitc {
 	for i in "$@"
 	do
@@ -22,6 +23,7 @@ function gitc {
 	done
 }
 
+# git clone another person's GitHub repos
 function gitco {
 	if [[ -n "$3" ]]; then
 		git clone https://github.com/$1/$2 $GHUBO/$3
@@ -30,11 +32,12 @@ function gitco {
 	fi
 }
 
-
+# Initialize a new GitHub repository
 function ginit {
 	git init && git add --all && gitsw
 }
 
+# Push ~/.emacs file to my emacs GitHub repo
 function eshup {
 	cp $HOME/.emacs $GHUBM/editors/emacs
 	cde

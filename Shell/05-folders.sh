@@ -1,0 +1,44 @@
+# Create GitHub-related folders
+if ! [[ -d $GHUB ]]; then
+	mkdir -p $GHUBM
+  mkdir -p $GHUBO
+elif ! [[ -d $GHUBM ]]; then
+  mkdir -p $GHUBM
+elif ! [[ -d $GHUBO ]]; then
+  mkdir -p $GHUBO
+fi
+
+# Create ~/Programs folder
+if ! [[ -d $PRG ]]; then
+  mkdir -p $PRG
+fi
+
+# Create other home folders
+## Desktop
+if ! [[ -d $HOME/Desktop ]]; then
+  mkdir $HOME/Desktop
+fi
+## Documents
+if ! [[ -d $HOME/Documents ]]; then
+  mkdir $HOME/Documents
+fi
+## Downloads
+if ! [[ -d $HOME/Downloads ]]; then
+  mkdir $HOME/Downloads
+fi
+## Music
+if ! [[ -d $HOME/Music ]]; then
+  mkdir $HOME/Music
+fi
+## Pictures
+if ! [[ -d $HOME/Pictures ]]; then
+  mkdir $HOME/Pictures
+fi
+## Videos
+if ! [[ -d $HOME/Videos ]]; then
+  mkdir $HOME/Videos
+fi
+## VirtualBox VMs
+if ! [[ -d "$HOME/VirtualBox VMs" ]]; then
+  mkdir "$HOME/VirtualBox VMs"
+fi
