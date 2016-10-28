@@ -1,18 +1,18 @@
 #!/bin/bash
 # Create GitHub directory
-if ! [[ -d $HOME/GitHub ]]; then
-  mkdir $HOME/GitHub
+if ! [[ -d $HOME/GitHub/mine/scripts ]]; then
+  mkdir $HOME/GitHub/mine/scripts
 fi
 
 # Get openssh, if not pre-installed and Zsh
 sudo apt-get install -y openssh-server zsh
 
 # Clone debian-scripts repo
-if ! [[ -d $HOME/GitHub/mine/debian-scripts ]]; then
-  git clone https://github.com/fusion809/debian-scripts $HOME/GitHub/mine/debian-scripts
+if ! [[ -d $HOME/GitHub/mine/scripts/debian-scripts ]]; then
+  git clone https://github.com/fusion809/debian-scripts $HOME/GitHub/mine/scripts/debian-scripts
   # Copy across
-  cp -a $HOME/GitHub/mine/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
-  sudo cp -a $HOME/GitHub/mine/debian-scripts/root/{Shell,.bashrc,.zshrc} /root/
+  cp -a $HOME/GitHub/mine/scripts/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
+  sudo cp -a $HOME/GitHub/mine/scripts/debian-scripts/root/{Shell,.bashrc,.zshrc} /root/
 elif [[ -d $HOME/GitHub/debian-scripts ]]; then
   cd $HOME/GitHub/debian-scripts
   git pull origin master
@@ -20,13 +20,13 @@ elif [[ -d $HOME/GitHub/debian-scripts ]]; then
   # Copy across
   cp -a $HOME/GitHub/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
   sudo cp -a $HOME/GitHub/debian-scripts/root/{Shell,.bashrc,.zshrc} /root/
-elif [[ -d $HOME/GitHub/mine/debian-scripts ]]; then
-  cd $HOME/GitHub/mine/debian-scripts
+elif [[ -d $HOME/GitHub/mine/scripts/debian-scripts ]]; then
+  cd $HOME/GitHub/mine/scripts/debian-scripts
   git pull origin master
   cd -
   # Copy across
-  cp -a $HOME/GitHub/mine/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
-  sudo cp -a $HOME/GitHub/mine/debian-scripts/root/{Shell,.bashrc,.zshrc} /root/
+  cp -a $HOME/GitHub/mine/scripts/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
+  sudo cp -a $HOME/GitHub/mine/scripts/debian-scripts/root/{Shell,.bashrc,.zshrc} /root/
 fi
 
 if ! [[ -d $HOME/.oh-my-zsh ]]; then
@@ -38,10 +38,10 @@ else
   cd -
 fi
 
-if ! [[ -d $HOME/GitHub/mine/zsh-theme ]]; then
+if ! [[ -d $HOME/GitHub/mine/scripts/zsh-theme ]]; then
 # Get my self-made zsh-themes
-  git clone https://github.com/fusion809/zsh-theme $HOME/GitHub/mine/zsh-theme
-  cp -a $HOME/GitHub/mine/zsh-theme/*.zsh-theme $HOME/.oh-my-zsh/themes/
+  git clone https://github.com/fusion809/zsh-theme $HOME/GitHub/mine/scripts/zsh-theme
+  cp -a $HOME/GitHub/mine/scripts/zsh-theme/*.zsh-theme $HOME/.oh-my-zsh/themes/
 else
   cd $HOME/GitHub/{,mine/}zsh-theme
   git pull origin master
