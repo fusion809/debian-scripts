@@ -13,10 +13,6 @@ function shup {
   cps && cdds && push "$1" && cd - && szsh
 }
 
-function sudoers {
-	sudo cp -a $GHUBM/scripts/arch-scripts/etc/sudoers /etc/sudoers
-}
-
 ## Update bin repo
 function bup {
   cd $HOME/bin
