@@ -8,13 +8,9 @@ function cps {
   sudo cp -a /root/{Shell,.bashrc,.zshrc} $DBS/root/
 }
 
-function cdas {
-  cd $DBS
-}
-
 ## Update sabayon-scripts GitHub repo
 function shup {
-  cps && cdas && push "$1" && cd - && szsh
+  cps && cdds && push "$1" && cd - && szsh
 }
 
 function sudoers {

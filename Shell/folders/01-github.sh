@@ -8,6 +8,7 @@ function sps {
   "JScripts"
   "mageia-scripts"
   "opensuse-scripts"
+  "pisi-scripts"
   "python-scripts"
   "sabayon-scripts"
   "slackware-scripts")
