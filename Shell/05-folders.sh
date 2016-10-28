@@ -1,6 +1,11 @@
 # Create GitHub-related folders
 if ! [[ -d $GHUB ]]; then
-	mkdir -p $GHUBM
+	mkdir -p $ED
+	mkdir -p $INS
+	mkdir -p $PKG
+	mkdir -p $SCR
+	mkdir -p $THM
+	mkdir -p $WEB
   mkdir -p $GHUBO
 elif ! [[ -d $GHUBM ]]; then
   mkdir -p $GHUBM
@@ -42,3 +47,9 @@ fi
 if ! [[ -d "$HOME/VirtualBox VMs" ]]; then
   mkdir "$HOME/VirtualBox VMs"
 fi
+
+# Run scripts in the folders directory
+for i in $HOME/Shell/folders/*.sh
+do
+	. "$i"
+done
