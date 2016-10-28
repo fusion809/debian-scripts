@@ -5,7 +5,7 @@ if ! [[ -d $HOME/GitHub/mine/scripts ]]; then
 fi
 
 # Get openssh, if not pre-installed and Zsh
-sudo apt-get install -y openssh-server zsh
+sudo apt-get install -y openssh-server zsh git
 
 # Clone debian-scripts repo
 if ! [[ -d $HOME/GitHub/mine/scripts/debian-scripts ]]; then
