@@ -31,10 +31,6 @@ fi
 if ! [[ -d $HOME/Downloads ]]; then
   mkdir $HOME/Downloads
 fi
-## Music
-if ! [[ -d $HOME/Music ]]; then
-  mkdir $HOME/Music
-fi
 ## Pictures
 if ! [[ -d $HOME/Pictures ]]; then
   mkdir $HOME/Pictures
