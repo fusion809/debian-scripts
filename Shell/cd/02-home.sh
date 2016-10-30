@@ -15,7 +15,7 @@ function cddc {
 }
 
 function cdcfe {
-	cd "$CC/$1"
+	cd "$CCM/$1"
 }
 
 function cdman {
