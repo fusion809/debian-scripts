@@ -2,9 +2,6 @@
 function gitc {
 	for i in "$@"
 	do
-		if ! [[ -d $GHUBM ]]; then
-			mkdir -p $GHUBM
-		fi
 		if [[ $i == 'atom' ]]; then
 			if ! [[ -d $HOME/.atom ]]; then
 				mkdir $HOME/.atom
@@ -15,9 +12,9 @@ function gitc {
 			git pull origin master
 			cd -
 		elif ! [[ -d $GHUBM/$i ]]; then
-			git clone https://github.com/fusion809/$i.git $GHUBM/$i
+			git clone https://github.com/fusion809/$i.git $i
 		fi
-		pushd $GHUBM/$i
+		pushd $i
 		gitsw
 		popd
 	done
