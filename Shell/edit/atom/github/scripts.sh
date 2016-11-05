@@ -43,6 +43,11 @@ function edms {
   eds "mageia-scripts/$1"
 }
 
+## NetBSD
+function edns {
+  eds "netbsd-scripts/$1"
+}
+
 ## OpenBSD
 function edobs {
   eds "openbsd-scripts/$1"
