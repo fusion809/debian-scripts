@@ -42,3 +42,18 @@ function edls {
 function edlso {
   eda "language-solus/$1"
 }
+
+### language-vala-modern
+function edlv {
+  eda "language-vala-modern/$1"
+}
+
+### terminal-fusion
+function edtf {
+  eda "terminal-fusion/$1"
+}
+
+### toolbar-fusion
+function edtof {
+  eda "toolbar-fusion/$1"
+}
