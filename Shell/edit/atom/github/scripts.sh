@@ -37,3 +37,33 @@ function edgs {
 function edjs {
   eds "JScripts/$1"
 }
+
+## Mageia
+function edms {
+  eds "mageia-scripts/$1"
+}
+
+## OpenBSD
+function edobs {
+  eds "openbsd-scripts/$1"
+}
+
+## openSUSE
+function edos {
+  eds "opensuse-scripts/$1"
+}
+
+## Pisi
+function edps {
+  eds "pisi-scripts/$1"
+}
+
+## Python
+function edpy {
+  eds "python-scripts/$1"
+}
+
+## Sabayon
+function edss {
+  eds "sabayon-scripts/$1"
+}
