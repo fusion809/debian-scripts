@@ -67,3 +67,13 @@ function edpy {
 function edss {
   eds "sabayon-scripts/$1"
 }
+
+## Slackware
+function edsls {
+  eds "slackware-scripts/$1"
+}
+
+## Zsh Theme
+function edzt {
+  eds "zsh-theme/$1"
+}
