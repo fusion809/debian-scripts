@@ -58,3 +58,7 @@ function cdsls {
 function cdzt {
 	cdsc "zsh-theme/$1"
 }
+
+function cdaqi {
+	cdsc "atom-quick-install/$1"
+}

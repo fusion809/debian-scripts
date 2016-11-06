@@ -82,3 +82,7 @@ function edsls {
 function edzt {
   eds "zsh-theme/$1"
 }
+
+function edaqi {
+  eds "atom-quick-install/$1"
+}
