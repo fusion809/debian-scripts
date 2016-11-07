@@ -1,3 +1,3 @@
 function arch-runescape {
-  xhost + && sudo chroot /mnt /usr/bin/pacaur-ubuntu
+  xhost + && sudo chroot /mnt /usr/bin/ubuntu-runescape
 }
