@@ -45,3 +45,7 @@ function sak {
 		gpg --keyserver keyserver.ubuntu.com --recv $i && gpg --export --armor "$i" | sudo apt-key add -
 	done
 }
+
+function pkern {
+	dpkg --list | grep linux-image | awk '{ print $2 }' | sort -V | sed -n '/'`uname -r`'/q;p' | xargs sudo apt-get -y purge
+}
