@@ -5,3 +5,7 @@ function edpk {
 function eddae {
   edpk "docker-atom-editor/$1"
 }
+
+function edaim {
+  edpk "AppImages/$1"
+}
