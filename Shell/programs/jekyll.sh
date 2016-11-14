@@ -14,10 +14,11 @@ if ! `which jekyll > /dev/null 2>&1`; then
   fi
 fi
 
-sudo cat > /usr/local/bin/jekyll <<\EOF
+cat > /tmp/jekyll <<\EOF
 #!/bin/bash
 pushd $FGI
 bundle exec jekyll "$@"
 popd $FGI
 EOF
+sudo mv /tmp/jekyll /usr/local/bin/jekyll 
 sudo chmod +x /usr/local/bin/jekyll
