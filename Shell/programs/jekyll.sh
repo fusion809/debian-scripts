@@ -16,9 +16,9 @@ fi
 
 cat > /tmp/jekyll <<\EOF
 #!/bin/bash
-pushd $FGI
+pushd /home/fusion809/GitHub/mine/websites/fusion809.github.io
 bundle exec jekyll "$@"
-popd $FGI
+popd
 EOF
-sudo mv /tmp/jekyll /usr/local/bin/jekyll 
+sudo mv /tmp/jekyll /usr/local/bin/jekyll
 sudo chmod +x /usr/local/bin/jekyll
