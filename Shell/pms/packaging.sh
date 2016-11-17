@@ -9,6 +9,6 @@ function dbuild {
   cd octave-4.2.0
   debuild -S -sa
   cd ..
-  debsign -kk EB93141B *.changes
+  debsign -k EB93141B *.changes
   dput -f ppa:brentonhorne/octave *.changes
 }
