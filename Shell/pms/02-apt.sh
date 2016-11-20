@@ -49,3 +49,11 @@ function sak {
 function pkern {
 	dpkg --list | grep linux-image | awk '{ print $2 }' | sort -V | sed -n '/'`uname -r`'/q;p' | xargs sudo apt-get -y purge
 }
+
+function plist {
+	dpkg --list | awk '{ print $2 }' > package-list.txt
+}
+
+function inpat {
+	sagi $(apt-cache search "$1" | sed 's/ \- .*//g' | grep -v "$2")
+}

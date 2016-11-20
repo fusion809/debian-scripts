@@ -27,3 +27,7 @@ function safa {
 function updatef {
   safu && safup && safa && apmup
 }
+
+function inpatf {
+	safi $(apt-cache search "$1" | sed 's/ \- .*//g' | grep -v "$2")
+}
