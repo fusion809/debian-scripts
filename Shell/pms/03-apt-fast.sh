@@ -28,6 +28,7 @@ function updatef {
   safu && safup && safa && apmup
 }
 
+# Install packages with "$1" in name or description and "$2" not in description 
 function inpatf {
 	safi $(apt-cache search "$1" | sed 's/ \- .*//g' | grep -v "$2")
 }
