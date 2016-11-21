@@ -5,6 +5,14 @@ function mytime {
 
 alias AEST=mytime
 
+function AWST {
+  TZ="Australia/Perth" date +"%r %A, %d %B %Y"
+}
+
+function ACST {
+  TZ="Australia/Adelaide" date +"%r %A, %d %B %Y"
+}
+
 # Eastern Standard Time (EST)
 function EST {
   TZ="America/New_York" date +"%r %A, %d %B %Y"
