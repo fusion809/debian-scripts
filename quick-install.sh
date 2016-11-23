@@ -1,7 +1,7 @@
 #!/bin/bash
 # Create GitHub directory
 if ! [[ -d $HOME/GitHub/mine/scripts ]]; then
-  mkdir $HOME/GitHub/mine/scripts
+  mkdir -p $HOME/GitHub/mine/scripts
 fi
 
 # Get openssh, if not pre-installed and Zsh
