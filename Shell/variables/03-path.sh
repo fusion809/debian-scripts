@@ -1,5 +1,5 @@
 export LIB="/usr/lib"
-export JAVA_HOME="$LIB/jvm/oracle-jdk-bin-1.8/bin"
+export JAVA_HOME="$LIB/jvm/java-8-openjdk-amd64"
 export GOPATH="$HOME/go"
 export GOROOT="$LIB/go"
 export GOBIN="$GOPATH/bin"
