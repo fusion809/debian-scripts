@@ -4,3 +4,9 @@ This repository contains shell profiles for Debian. That is, these shell scripts
 ```bash
 /bin/bash -c "$(curl -sL https://git.io/vr8Mm)"
 ```
+
+or:
+
+```bash
+/bin/bash -c "$(wget -cqO- https://git.io/vr8Mm)"
+```
