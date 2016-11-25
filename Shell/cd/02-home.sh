@@ -51,7 +51,7 @@ function cdv {
 }
 
 function cdvi {
-	cdv "ISO/$1"
+	cdv "ISOs/$1"
 }
 
 function cdvbm {
