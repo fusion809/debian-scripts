@@ -2,6 +2,10 @@ function agi {
 	apt-get install -y $@
 }
 
+function agr {
+	apt-get remove -y "$@"
+}
+
 function acs {
 	apt-cache search "$@"
 }
