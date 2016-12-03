@@ -62,3 +62,7 @@ function cdzt {
 function cdaqi {
 	cdsc "atom-quick-install/$1"
 }
+
+function cdgn {
+	cdsc "GNU_Octave/$1"
+}

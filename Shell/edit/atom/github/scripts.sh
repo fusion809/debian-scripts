@@ -86,3 +86,7 @@ function edzt {
 function edaqi {
   eds "atom-quick-install/$1"
 }
+
+function edgn {
+  eds "GNU_Octave/$1"
+}
