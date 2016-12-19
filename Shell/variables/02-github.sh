@@ -38,7 +38,7 @@ if ! [[ -d $ATO ]]; then
   mkdir -p $ATO
 fi
 
-# ATO
+# INS
 export INS=$GHUBM/installers
 if ! [[ -d $INS ]]; then
   mkdir -p $INS
