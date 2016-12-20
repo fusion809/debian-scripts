@@ -7,6 +7,6 @@ VSCODE_URL=$(wget -cq http://code.visualstudio.com/updates -O - | grep "deb-x64"
 VSCODE_LATEST_VERSION=$(echo $VSCODE_URL | cut -d '/' -f 4)
 
 if [[ $VSCODE_INSTALLED_VERSION < $VSCODE_LATEST_VERSION ]]; then
-  wget -c $VSCODE_URL -O code-${VSCODE_LATEST_VERSION}-amd64.deb
-  sudo dpkg -i code-${VSCODE_LATEST_VERSION}-amd64.deb
+  wget -c $VSCODE_URL -O /tmp/code-${VSCODE_LATEST_VERSION}-amd64.deb
+  sudo dpkg -i /tmp/code-${VSCODE_LATEST_VERSION}-amd64.deb
 fi
