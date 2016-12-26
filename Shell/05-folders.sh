@@ -35,10 +35,6 @@ fi
 if ! [[ -d $HOME/Pictures ]]; then
   mkdir $HOME/Pictures
 fi
-## Videos
-if ! [[ -d $HOME/Videos ]]; then
-  mkdir $HOME/Videos
-fi
 ## VirtualBox VMs
 if ! [[ -d "$HOME/VirtualBox VMs" ]]; then
   mkdir "$HOME/VirtualBox VMs"
