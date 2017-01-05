@@ -1,12 +1,14 @@
 if [[ -f /usr/bin/code ]]; then
-  VSCODE_INSTALLED_VERSION=$(apt-cache show code | grep "Version:" | cut -d ':' -f 2 | cut -d ' ' -f 2)
-else
-  VSCODE_INSTALLED_VERSION=""
+  export VSCODE_INSTALLED_VERSION=$(apt-cache show code | grep "Version:" | cut -d ':' -f 2 | cut -d ' ' -f 2)
 fi
-VSCODE_URL=$(wget -cq http://code.visualstudio.com/updates -O - | grep "deb-x64" | cut -d '"' -f 8)
-VSCODE_LATEST_VERSION=$(echo $VSCODE_URL | cut -d '/' -f 4)
+export VSCODE_URL=$(wget -cq http://code.visualstudio.com/updates -O - | grep "deb-x64" | cut -d '"' -f 8)
+export VSCODE_LATEST_VERSION=$(echo $VSCODE_URL | cut -d '/' -f 4)
 
-if [[ $VSCODE_INSTALLED_VERSION < $VSCODE_LATEST_VERSION ]]; then
+function vscode-install {
   wget -c $VSCODE_URL -O /tmp/code-${VSCODE_LATEST_VERSION}-amd64.deb
   sudo dpkg -i /tmp/code-${VSCODE_LATEST_VERSION}-amd64.deb
+}
+
+if [[ -n $VSCODE_INSTALLED_VERSION]] && [[ $VSCODE_INSTALLED_VERSION < $VSCODE_LATEST_VERSION ]]; then
+  vscode-install
 fi

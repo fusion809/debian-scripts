@@ -1,3 +1,11 @@
+if ! [[ -f /usr/bin/apt-fast ]]; then
+  sagi aria2 git
+  git clone https://github.com/ilikenwf/apt-fast /tmp/apt-fast
+  sudo cp /tmp/apt-fast/apt-fast /usr/bin
+  sudo chmod +x /usr/bin/apt-fast
+  sudo cp /tmp/apt-fast/apt-fast.conf /etc
+fi
+
 function saguf {
   sudo apt-fast update
 }
