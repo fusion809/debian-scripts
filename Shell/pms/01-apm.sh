@@ -22,7 +22,3 @@ function apml {
 function apmup {
   apm update --no-confirm
 }
-
-function atomb {
-  script/build && script/grunt mkdeb && sudo dpkg -i out/atom*.deb
-}

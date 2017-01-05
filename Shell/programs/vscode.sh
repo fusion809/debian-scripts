@@ -1,3 +1,4 @@
+#!/bin/zsh
 if [[ -f /usr/bin/code ]]; then
   export VSCODE_INSTALLED_VERSION=$(apt-cache show code | grep "Version:" | cut -d ':' -f 2 | cut -d ' ' -f 2)
 fi
@@ -9,6 +10,8 @@ function vscode-install {
   sudo dpkg -i /tmp/code-${VSCODE_LATEST_VERSION}-amd64.deb
 }
 
-if [[ -n $VSCODE_INSTALLED_VERSION]] && [[ $VSCODE_INSTALLED_VERSION < $VSCODE_LATEST_VERSION ]]; then
+autoload is-at-least
+
+if [[ -n ${VSCODE_INSTALLED_VERSION}]] && ! `is-at-least ${VSCODE_LATEST_VERSION} ${VSCODE_INSTALLED_VERSION:-0}`; then
   vscode-install
 fi
