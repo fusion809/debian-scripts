@@ -40,8 +40,10 @@ if ! [[ -d "$HOME/VirtualBox VMs" ]]; then
   mkdir "$HOME/VirtualBox VMs"
 fi
 
-# Run scripts in the folders directory
-for i in $HOME/Shell/folders/*.sh
-do
-	. "$i"
-done
+# Test if running in VM - test is from http://unix.stackexchange.com/questions/3685/find-out-if-the-os-is-running-in-a-virtual-environment
+if ! `cat /proc/cpuinfo | grep hypervisor >/dev/null 2>&1`; then
+	for i in $HOME/Shell/folders/*.sh
+	do
+	  . "$i"
+	done
+f

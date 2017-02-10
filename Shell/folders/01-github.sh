@@ -20,3 +20,15 @@ function sps {
     fi
   done
 }
+
+if ! [[ -d $FGI ]]; then
+  if ! [[ -f $HOME/.fgilock ]]; then
+    printf "The Hornery was not locally detected on this system; do you want to clone it to $FGI? [y/n]"
+    read -p $fgilock
+  fi
+  if [[ $fgilock == "y" ]]; then
+    git clone https://github.com/fusion809/fusion809.github.io $FGI
+  else
+    echo $fgilock > $HOME/.fgilock
+  fi
+fi

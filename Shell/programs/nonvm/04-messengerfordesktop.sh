@@ -12,7 +12,7 @@ function messengerfordesktop-install {
   sudo dpkg -i /tmp/messengerfordesktop-${MESSENGER_LATEST_VERSION}-linux-amd64.deb
 }
 
-if ! `is-at-least $MESSENGER_LATEST_VERSION ${MESSENGER_INSTALLED_VERSION:-0}`; then
+if [[ -n $MESSENGER_INSTALLED_VERSION ]] && ! `is-at-least $MESSENGER_LATEST_VERSION ${MESSENGER_INSTALLED_VERSION:-0}`; then
   if ! [[ -f $HOME/.local/share/messengerfordesktop-${MESSENGER_LATEST_VERSION} ]]; then
     messengerfordesktop-install
   fi
