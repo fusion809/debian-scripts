@@ -46,4 +46,4 @@ if ! `cat /proc/cpuinfo | grep hypervisor >/dev/null 2>&1`; then
 	do
 	  . "$i"
 	done
-f
+fi
