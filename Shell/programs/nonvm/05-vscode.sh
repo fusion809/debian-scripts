@@ -12,6 +12,6 @@ function vscode-install {
 
 autoload is-at-least
 
-if [[ -n ${VSCODE_INSTALLED_VERSION}]] && ! `is-at-least ${VSCODE_LATEST_VERSION} ${VSCODE_INSTALLED_VERSION:-0}`; then
+if [[ -n ${VSCODE_INSTALLED_VERSION} ]] && ! `is-at-least ${VSCODE_LATEST_VERSION} ${VSCODE_INSTALLED_VERSION:-0}`; then
   vscode-install
 fi
