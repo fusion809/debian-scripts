@@ -24,6 +24,13 @@ function cdman {
 
 alias cdmn=cdman
 
+function cdobs {
+	cd $HOME/OBS/$1
+}
+
+function cdobsh {
+	cdobs home:fusion809/$1
+}
 # Pictures
 function cdpi {
 	cdh "Pictures/$1"
