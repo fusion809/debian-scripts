@@ -1,34 +1,34 @@
 # GitHub/mine/editors/vim
-function vvi {
+function gvvi {
 	pushd $EDT/vim
-	vim
+	gvim
 	popd
 }
 
 # GitHub/mine/packaging/AppImages
-function vaim {
+function gvaim {
 	pushd $PKG/AppImages
-	vim
+	gvim
 	popd
 }
 
 # GitHub/mine/packaging/GVim.AppImage
-function vgai {
+function gvgai {
 	pushd $PKG/GVim.AppImage
-	vim
+	gvim
 	popd
 }
 
 # GitHub/mine/scripts/opensuse-scripts
-function vos {
+function gvos {
 	pushd $OSC
-	vim
+	gvim
 	popd
 }
 
 # GitHub/mine/websites/fusion809.github.io
-function vfgi {
+function gvfgi {
         pushd $FGI
-        vim
+        gvim
         popd
 }
