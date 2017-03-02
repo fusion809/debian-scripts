@@ -10,3 +10,7 @@ function cda {
 function cdem {
   cde "emacs/$1"
 }
+
+function cdvm {
+	cde "vim/$1"
+}
