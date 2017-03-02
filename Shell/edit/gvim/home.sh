@@ -1,3 +1,3 @@
-function vsh {
-	vim $HOME/Shell
+function gvsh {
+	gvim $HOME/Shell
 }
