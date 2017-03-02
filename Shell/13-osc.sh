@@ -26,11 +26,11 @@ function ovimup {
 		sed -i -e 's|Release:       [0-9].*|Release:       1|g' vim.spec
 
 		if [[ "$1" == "vim" ]]; then
-			sed -i -e "s|$vim_patchversion|$patchversion|g" {$HOME/OBS/home:fusion809/gvim-gtk2,$HOME/AUR/gvim-gtk2,$PKG/PKGBUILDs/gvim-gtk2,$PKG/PKGBUILDs/gvim-gtk3}/PKGBUILD
+			sed -i -e "s|$vim_patchversion|$patchversion|g" {$HOME/OBS/home:fusion809/gvim-gtk2,$PKG/PKGBUILDs/gvim-gtk2,$PKG/PKGBUILDs/gvim-gtk3}/PKGBUILD
 
-			cd $HOME/AUR/gvim-gtk2
-			push "Bumping to $pkgver"
-			cd -
+#			cd $HOME/AUR/gvim-gtk2
+#			push "Bumping to $pkgver"
+#			cd -
 
 			cd $PKG/PKGBUILDs/gvim-gtk2
 			push "Bumping to $pkgver"
