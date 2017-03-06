@@ -11,4 +11,4 @@
 
 function chot {
 	sudo chroot /mnt /bin/bash
-
+}
