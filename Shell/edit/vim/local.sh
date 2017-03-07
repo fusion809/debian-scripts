@@ -1,3 +1,7 @@
+function vcl {
+	vim *.changelog
+}
+
 function vrm {
 	vim README*
 }
