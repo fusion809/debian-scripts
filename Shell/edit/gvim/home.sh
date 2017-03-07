@@ -1,3 +1,5 @@
 function gvsh {
-	gvim $HOME/Shell
+	pushd $HOME/Shell
+	gvim
+	popd
 }

@@ -1,3 +1,5 @@
 function vsh {
-	vim $HOME/Shell
+	pushd $HOME/Shell
+	vim
+	popd -
 }
