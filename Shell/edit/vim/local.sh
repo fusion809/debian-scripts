@@ -6,6 +6,10 @@ function vcp {
 	vim *.cpp
 }
 
+function vgp {
+	vim *.gp
+}
+
 function vmk {
 	vim Makefile
 }
