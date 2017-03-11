@@ -6,6 +6,10 @@ function vcp {
 	vim *.cpp
 }
 
+function vmk {
+	vim Makefile
+}
+
 function vrm {
 	vim README*
 }
