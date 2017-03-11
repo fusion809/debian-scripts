@@ -13,7 +13,7 @@ function saguf {
 alias safu=saguf
 
 function sagupf {
-  sudo apt-fast upgrade -y --allow-unauthenticated
+  sudo apt-fast dist-upgrade -y --allow-unauthenticated
 }
 
 alias safup=sagupf

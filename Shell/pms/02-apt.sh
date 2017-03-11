@@ -30,7 +30,7 @@ function sagu {
 
 # Upgrade packages
 function sagug {
-	sudo apt-get upgrade -y --allow-unauthenticated
+	sudo apt-get dist-upgrade -y --allow-unauthenticated
 }
 
 # Update cache, upgrade packages, remove unneeded package(s) and update Atom packages.
