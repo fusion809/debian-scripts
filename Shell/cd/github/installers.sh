@@ -19,7 +19,7 @@ function cdki {
 	cdin "komodo-installer/$1"
 }
 
-function cdli {
+function cdlti {
 	cdin "lighttable-installer/$1"
 }
 
