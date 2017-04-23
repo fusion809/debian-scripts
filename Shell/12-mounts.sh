@@ -1,4 +1,4 @@
-if ! `grep -qs "/mnt/proc" /proc/mounts`; then
+if `grep -qs "/mnt/proc" /proc/mounts`; then
 	sudo mount -t proc proc /mnt/proc
 	sudo mount --rbind /dev /mnt/dev
 	sudo mount --rbind /sys /mnt/sys
