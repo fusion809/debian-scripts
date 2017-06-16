@@ -15,7 +15,7 @@ if ! [[ -d $SCR ]]; then
 fi
 
 # Get openssh, if not pre-installed and Zsh
-sudo apt-get install -y openssh-server zsh git
+sudo apt-get install -y xclip openssh-server zsh git
 
 # Clone debian-scripts repo
 if ! [[ -d $DS ]]; then
