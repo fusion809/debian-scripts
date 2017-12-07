@@ -7,7 +7,11 @@ function push {
 
 # Undo last pushed commit
 function gitu {
-    git reset --hard HEAD~1
+    if ! [[ -n $1 ]]; then
+         git reset --hard HEAD~1
+    else
+         git reset --hard HEAD~$1
+    fi
     git push origin $(git rev-parse --abbrev-ref HEAD) -f
 }
 
