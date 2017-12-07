@@ -1,11 +1,6 @@
 ## Update local arch-scripts repo
 function cps {
   sudo chmod +x -R {$HOME,/root}/Shell/
-  rm -rf $DBS/Shell && mkdir $DBS/Shell
-  sudo rm -rf $DBS/root/Shell
-  cp -a $HOME/Shell/* $DBS/Shell
-  cp -a $HOME/{.bashrc,.zshrc} $DBS/
-  sudo cp -a /root/{Shell,.bashrc,.zshrc} $DBS/root/
 }
 
 ## Update sabayon-scripts GitHub repo
