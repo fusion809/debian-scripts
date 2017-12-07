@@ -5,6 +5,11 @@ function cdat {
 function cdls {
     cd $LS/$1
 }
+
+function cdlt {
+    cd $LS/themes/$1
+}
+
 # Applications
 function cdap {
 	cd $AP/$1
