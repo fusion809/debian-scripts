@@ -2,6 +2,9 @@ function cdat {
 	cd $HOME/.atom/$1
 }
 
+function cdls {
+    cd $LS/$1
+}
 # Applications
 function cdap {
 	cd $AP/$1
