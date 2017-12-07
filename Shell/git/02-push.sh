@@ -5,6 +5,12 @@ function push {
   git push origin $(git rev-parse --abbrev-ref HEAD)   # Push to the current branch
 }
 
+# Undo last pushed commit
+function gitu {
+    git reset --hard HEAD~1
+    git push origin $(git rev-parse --abbrev-ref HEAD) -f
+}
+
 # Push GitHub pages changes
 function pushp {
   git add --all && git commit -m "$1" && git push -u origin master
