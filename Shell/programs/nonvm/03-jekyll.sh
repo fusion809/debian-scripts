@@ -6,7 +6,7 @@ if [[ -d $FGI ]]; then
     if ! `which bundle exec jekyll > /dev/null 2>&1`; then
       if ! `which bundle > /dev/null 2>&1`; then
         if ! `which gem > /dev/null 2>&1`; then
-          sudo apt-get install -y gem ruby-dev
+          sudo apt-get install -y build-essential gem ruby-dev
         fi
         sudo gem install bundler
       fi
