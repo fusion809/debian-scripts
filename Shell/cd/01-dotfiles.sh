@@ -50,7 +50,3 @@ function cdmen {
 function cdz {
 	cd $HOME/.oh-my-zsh/$1
 }
-
-function cdth {
-    cd $HOME/.themes/$1
-}
