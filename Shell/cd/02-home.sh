@@ -24,6 +24,14 @@ function cdman {
 
 alias cdmn=cdman
 
+function cdtx {
+    cdh "Documents/Text files/$1"
+}
+
+function cddo {
+    cdh "Downloads/$1"
+}
+
 function cdobs {
 	cd $HOME/OBS/$1
 }
