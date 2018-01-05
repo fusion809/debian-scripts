@@ -32,8 +32,12 @@ function safa {
   sudo apt-fast autoremove -y
 }
 
+function flatup {
+    flatpak update
+}
+
 function updatef {
-  safu && safup && safa && apmup
+  safu && safup && safa && apmup && flatup
 }
 
 # Install packages with "$1" in name or description and "$2" not in description
