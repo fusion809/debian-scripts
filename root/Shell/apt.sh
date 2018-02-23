@@ -19,7 +19,7 @@ function update {
 }
 
 function updatef {
-	apt-fast update && apt-fast upgrade -y --allow-unauthenticated && apt-fast autoremove -y && apt-fast autoclean
+	apt-fast update && apt-fast full-upgrade -y --allow-unauthenticated && apt-fast autoremove -y && apt-fast autoclean
 }
 
 function afi {

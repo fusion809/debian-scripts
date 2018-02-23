@@ -1,5 +1,5 @@
 # $HOME/.bashrc: executed by bash(1) for non-login shells.
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.gem/ruby/2.2.0/bin:/home/fusion809/.gem/ruby/2.2.0/bin:/usr/lib/jvm/java-8-openjdk/bin/:/bin:/usr/bin:/sbin:/usr/sbin"
+export PATH="/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin"
 
 # Note: PS1 and umask are already set in /etc/profile. You should not
 # need this unless you want different defaults for root.
