@@ -2,6 +2,6 @@ function cdcf {
     cdgm config/$1
 }
 
-function cdi3 {
+function cdci3 {
     cdcf i3-configs/$1
 }

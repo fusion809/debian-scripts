@@ -1,5 +1,5 @@
 function cdat {
-	cd $HOME/.atom/$1
+    cd $HOME/.atom/$1
 }
 
 function cdls {
@@ -12,41 +12,46 @@ function cdlt {
 
 # Applications
 function cdap {
-	cd $AP/$1
+    cd $AP/$1
 }
 
 function cdapi {
-	cdap "integrated-development-environments/$1"
+    cdap "integrated-development-environments/$1"
 }
 
 function cdapt {
-	cdap "text-editors/$1"
+    cdap "text-editors/$1"
 }
 
 function cdli {
-	cd $LS/icons/$1
+    cd $LS/icons/$1
 }
 
 function cdd {
-	cd $LS/desktop-directories/$1
+    cd $LS/desktop-directories/$1
 }
 
 # Icons
 function cdic {
-	cd $IC/$1
+    cd $IC/$1
 }
 
 function cdvap {
-	cdap VirtualBox/$1
+    cdap VirtualBox/$1
 }
 
 alias cdapv=cdvap
 
 # Menus
 function cdmen {
-	cd $HOME/.config/menus/$1
+    cd $HOME/.config/menus/$1
 }
 
 function cdz {
-	cd $HOME/.oh-my-zsh/$1
+    cd $HOME/.oh-my-zsh/$1
+}
+
+# i3
+function cdi3 {
+    cd $HOME/.i3/$1
 }
