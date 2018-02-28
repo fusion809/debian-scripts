@@ -25,10 +25,3 @@ function vos {
 	vim
 	popd
 }
-
-# GitHub/mine/websites/fusion809.github.io
-function vfgi {
-        pushd $FGI
-        vim
-        popd
-}
