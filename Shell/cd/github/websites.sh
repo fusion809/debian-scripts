@@ -7,6 +7,6 @@ function cdfgi {
     cdw "fusion809.github.io/$1"
 }
 
-function cdim [
+function cdim {
     cdw "images/$1"
 }
