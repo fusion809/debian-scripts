@@ -52,6 +52,10 @@ function cds {
 	cdpi "Screenshots/$1"
 }
 
+function cdpd {
+    cdp "Deb/$1"
+}
+
 function cdsh {
 	cdh "Shell/$1"
 }
