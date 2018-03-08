@@ -33,7 +33,9 @@ function safa {
 }
 
 function flatup {
-    flatpak update
+    if [[ -f /usr/bin/flatpak ]]; then
+         flatpak update
+    fi
 }
 
 function updatef {
