@@ -56,6 +56,10 @@ function cdpd {
     cdp "Deb/$1"
 }
 
+function cdpr {
+    cdp "rpm/$1"
+}
+
 function cdsh {
 	cdh "Shell/$1"
 }
