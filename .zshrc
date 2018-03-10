@@ -63,6 +63,8 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 # # for Ubuntu 12.04, Fedora 21, and MacOSX 10.9 users)
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+# Use vi keybindings
+bindkey -v
 #
 # # bind P and N for EMACS mode
 # bindkey -M emacs '^P' history-substring-search-up
@@ -102,8 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# Use vi keybindings
-bindkey -v
 
 for i in $HOME/Shell/*.sh
 do
