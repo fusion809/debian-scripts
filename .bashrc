@@ -119,4 +119,5 @@ do
   . "$i"
 done
 
+set -o vi
 PATH=$PATH:$HOME/.local/bin
