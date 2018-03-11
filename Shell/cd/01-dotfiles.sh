@@ -31,6 +31,12 @@ function cdd {
     cd $LS/desktop-directories/$1
 }
 
+function cdlsw {
+    cd $LS/wallpapers/$1
+}
+
+alias cdlw=cdlsw
+
 # Icons
 function cdic {
     cd $IC/$1
