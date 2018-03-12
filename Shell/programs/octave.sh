@@ -1,13 +1,23 @@
-function octave {
-    if ! [[ -f /usr/bin/octave ]]; then
-         flatpak run org.octave.Octave "$@"
+if ! ( [[ -f /usr/bin/octave ]] | [[ -f $HOME/.nix-profile/bin/octave ]]); then
+    if `which flatpak`; then
+         alias octave=`flatpak run org.octave.Octave`
     fi
-}
+fi
  
 function octcli {
-    octave --no-gui "$@"
+    if ! `which octave-cli`; then
+         if `which octave`; then
+              octave --no-gui "$@"
+         fi
+    else
+         octave-cli "$@"
+    fi
 }
 
 function octe {
-    octave --eval "$1"
+    if  [[ -f /usr/bin/octave ]]; then
+         octave --eval "$1"
+    elif [[ -f $HOME/.nix-profile/bin/octave-cli ]]; then
+         octave-cli --eval "$1"
+    fi
 } 
