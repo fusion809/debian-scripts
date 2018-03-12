@@ -6,4 +6,4 @@ alias CPSP=CFE
 export CFA="$CCM/Simple-Pendulum-Adjusted"
 alias CPSPA=CFA
 export CSP="$DC/C-Math-Projects"
-export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
