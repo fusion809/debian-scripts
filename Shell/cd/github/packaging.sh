@@ -12,3 +12,7 @@ function cdaim {
 function cddae {
 	cdpk "docker-atom-editor/$1"
 }
+
+function cdfo {
+    cdpk "fusion809-overlay/$1"
+}
