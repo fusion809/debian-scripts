@@ -1,4 +1,4 @@
-if ! [[ -f /usr/bin/octave ]] 
+if ! [[ -f /usr/bin/octave ]]; then 
     if ! [[ -f $HOME/.nix-profile/bin/octave ]]; then
          if [[ -f /usr/bin/flatpak ]]; then
               alias octave=`flatpak run org.octave.Octave`
