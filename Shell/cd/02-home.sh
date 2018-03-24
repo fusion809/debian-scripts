@@ -69,29 +69,33 @@ function cdpr {
 }
 
 function cdsh {
-	cdh "Shell/$1"
+    cdh "Shell/$1"
 }
 
 function cdt {
-	cdh "Textbooks/$1"
+    cdh "Textbooks/$1"
 }
 
 # VirtualBox
 function cdv {
-	cdh "VirtualBox VMs/$1"
+    cdh "VirtualBox VMs/$1"
 }
 
 function cdvi {
-	cdv "ISOs/$1"
+    cdv "ISOs/$1"
 }
 
 function cdvbm {
-	cdh "Desktop/VirtualBox machines/$1"
+    cdh "Desktop/VirtualBox machines/$1"
 }
 
 alias cdvb=cdvbm
 #- End of VirtualBox -#
 
 function cdvs {
-	cdh "Videos/SO/$1"
+    cdh "Videos/SO/$1"
+}
+
+function cdvy {
+    cdh "Videos/YouTube/$1"
 }
