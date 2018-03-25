@@ -52,6 +52,8 @@ function cds {
 	cdpi "Screenshots/$1"
 }
 
+alias cdpis=cds
+
 function cdpa {
     cdp "AppImage/$1"
 }
