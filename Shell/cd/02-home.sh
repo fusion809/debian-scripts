@@ -87,6 +87,10 @@ function cdvi {
     cdv "ISOs/$1"
 }
 
+function cdvil {
+    cdvi Linux/$1
+}
+
 function cdvbm {
     cdh "Desktop/VirtualBox machines/$1"
 }
