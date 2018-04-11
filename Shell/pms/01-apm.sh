@@ -1,21 +1,21 @@
 # Install Atom package
 function apmi {
-  apm install "$@" --no-confirm
+    apm install "$@" --no-confirm
 }
 
 # Remove Atom package
 function apmr {
-  apm remove "$@"
+    apm remove "$@"
 }
 
 # search apm packages
 function apms {
-  apm search "$@"
+    apm search "$@"
 }
 
 # list installed apm packages
 function apml {
-  apm list
+    apm list
 }
 
 # Update Atom packages
