@@ -1,3 +1,3 @@
 if [[ $DESKTOP_SESSION == "i3" ]]; then
-    sh $HOME/.xsession
+    bash $HOME/.xsession
 fi
