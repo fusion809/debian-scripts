@@ -91,6 +91,10 @@ function cdvil {
     cdvi Linux/$1
 }
 
+function cdviu {
+    cdvil "Ubuntu/$1"
+}
+
 function cdvbm {
     cdh "Desktop/VirtualBox machines/$1"
 }
