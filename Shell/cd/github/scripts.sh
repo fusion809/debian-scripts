@@ -7,7 +7,7 @@ function cdas {
 	cdsc "arch-scripts/$1"
 }
 
-function cdcs {
+function cdces {
 	cdsc "centos-scripts/$1"
 }
 
