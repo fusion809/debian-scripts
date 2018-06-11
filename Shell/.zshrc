@@ -1,0 +1,1 @@
+/home/fusion809/.zshrc
