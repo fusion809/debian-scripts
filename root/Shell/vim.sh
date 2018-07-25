@@ -1,15 +1,19 @@
 function vsh {
-	vim $HOME/Shell
+    vim $HOME/Shell
 }
 
 function vbash {
-	vim $HOME/.bashrc
+    vim $HOME/.bashrc
 }
 
 function vrc {
-	vim $HOME/.vimrc
+    vim $HOME/.vimrc
 }
 
 function vzsh {
-	vim $HOME/.zshrc
+    vim $HOME/.zshrc
+}
+
+function vfs {
+    vim /etc/fstab
 }
